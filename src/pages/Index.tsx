@@ -304,12 +304,12 @@ const Index = () => {
                 >
                   Impressum
                 </Link>
-                <a
-                  href="#datenschutz"
+                <Link
+                  to="/datenschutz"
                   className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                 >
                   Datenschutz
-                </a>
+                </Link>
               </div>
             </div>
           </div>
