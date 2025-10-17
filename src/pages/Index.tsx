@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Heart, Sparkles, Users, Mail, Phone, MapPin, Instagram, Facebook } from "lucide-react";
+import { Heart, Users, Mail, Phone, MapPin } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
 import textilesImage from "@/assets/textiles.jpg";
 import giftsImage from "@/assets/gifts.jpg";
@@ -20,7 +20,6 @@ const Index = () => {
               <a href="#home" className="text-foreground hover:text-primary transition-colors">Start</a>
               <a href="#about" className="text-foreground hover:text-primary transition-colors">Über uns</a>
               <a href="#products" className="text-foreground hover:text-primary transition-colors">Produkte</a>
-              <a href="#custom" className="text-foreground hover:text-primary transition-colors">Personalisierung</a>
               <a href="#contact" className="text-foreground hover:text-primary transition-colors">Kontakt</a>
             </div>
           </div>
@@ -41,15 +40,12 @@ const Index = () => {
             Textilien & Geschenke<br />mit Herz
           </h2>
           <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto font-light">
-            Qualität, Kreativität und personalisierte Geschenke – 
+            Qualität und Kreativität – 
             handverlesen für Sie, Ihr Unternehmen und Ihren Verein
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-delay">
             <Button size="lg" variant="secondary" className="shadow-elegant">
               Jetzt entdecken
-            </Button>
-            <Button size="lg" variant="outline" className="bg-primary-foreground/10 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary shadow-elegant">
-              Personalisierte Geschenke bestellen
             </Button>
           </div>
         </div>
@@ -70,7 +66,7 @@ const Index = () => {
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed mb-12">
               Ob für den privaten Anlass, Ihr Unternehmen oder Ihren Verein – bei uns finden 
-              Sie individuelle Lösungen, die begeistern. Qualität und persönliche Beratung 
+              Sie Lösungen, die begeistern. Qualität und persönliche Beratung 
               stehen bei uns an erster Stelle.
             </p>
             
@@ -127,7 +123,7 @@ const Index = () => {
                 <div className="aspect-square overflow-hidden">
                   <img 
                     src={giftsImage} 
-                    alt="Personalisierte Geschenkartikel" 
+                    alt="Geschenkartikel" 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
@@ -142,77 +138,10 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            {/* Custom Printing Category */}
-            <Card className="shadow-soft hover:shadow-elegant transition-all duration-300 overflow-hidden group">
-              <CardContent className="p-0">
-                <div className="aspect-square overflow-hidden">
-                  <img 
-                    src={customPrintingImage} 
-                    alt="Individueller Druck und Stickerei" 
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-2xl font-bold text-primary mb-3">Individueller Druck</h3>
-                  <p className="text-muted-foreground mb-4">
-                    Professioneller Druck, Stickerei und Gravur. 
-                    Wir bringen Ihre Ideen auf Textilien und Geschenke.
-                  </p>
-                  <Button variant="outline" className="w-full">Mehr erfahren</Button>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </section>
 
-      {/* Customization Section */}
-      <section id="custom" className="py-20 bg-secondary/30">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center animate-fade-in">
-            <div className="flex justify-center mb-6">
-              <Sparkles className="w-12 h-12 text-accent" />
-            </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-              Personalisierung nach Ihren Wünschen
-            </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              Machen Sie Ihre Textilien und Geschenke einzigartig! Wir bieten professionellen 
-              Textildruck, hochwertige Stickerei und präzise Gravur an. Ob Firmenlogos, 
-              Vereinswappen oder persönliche Designs – wir setzen Ihre Ideen mit Liebe zum Detail um.
-            </p>
-            <div className="grid md:grid-cols-3 gap-6 mb-12">
-              <Card className="shadow-soft">
-                <CardContent className="p-6">
-                  <h3 className="font-semibold text-lg mb-2">Textildruck</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Siebdruck, Digitaldruck und Transferdruck für brillante Ergebnisse
-                  </p>
-                </CardContent>
-              </Card>
-              <Card className="shadow-soft">
-                <CardContent className="p-6">
-                  <h3 className="font-semibold text-lg mb-2">Stickerei</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Hochwertige Maschinenstickerei für langlebige und elegante Designs
-                  </p>
-                </CardContent>
-              </Card>
-              <Card className="shadow-soft">
-                <CardContent className="p-6">
-                  <h3 className="font-semibold text-lg mb-2">Gravur</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Lasergravur auf Holz, Glas und anderen Materialien
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-            <Button size="lg" className="shadow-elegant">
-              Individuelle Anfrage stellen
-            </Button>
-          </div>
-        </div>
-      </section>
 
       {/* Gallery Section */}
       <section id="gallery" className="py-20">
@@ -346,11 +275,11 @@ const Index = () => {
       {/* Footer */}
       <footer className="bg-primary text-primary-foreground py-12">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div>
               <h3 className="text-xl font-bold mb-4">NDA – Textilien & Geschenkartikel</h3>
               <p className="text-primary-foreground/80 text-sm">
-                Ihr lokales Fachgeschäft für hochwertige Textilien und personalisierte Geschenke.
+                Ihr lokales Fachgeschäft für hochwertige Textilien und Geschenkartikel.
               </p>
             </div>
             <div>
@@ -361,17 +290,6 @@ const Index = () => {
                 </a>
                 <a href="#datenschutz" className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors">
                   Datenschutz
-                </a>
-              </div>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Folgen Sie uns</h4>
-              <div className="flex gap-4">
-                <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  <Facebook className="w-6 h-6" />
-                </a>
-                <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  <Instagram className="w-6 h-6" />
                 </a>
               </div>
             </div>
