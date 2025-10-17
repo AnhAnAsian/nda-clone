@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -297,12 +298,12 @@ const Index = () => {
             <div>
               <h4 className="font-semibold mb-4">Rechtliches</h4>
               <div className="space-y-2 text-sm">
-                <a
-                  href="#impressum"
+                <Link
+                  to="/impressum"
                   className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                 >
                   Impressum
-                </a>
+                </Link>
                 <a
                   href="#datenschutz"
                   className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors"
