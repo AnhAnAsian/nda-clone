@@ -43,16 +43,16 @@ const Index = () => {
 
         <div className="relative z-10 container mx-auto px-4 py-20 text-center animate-fade-in">
           <h2 className="text-5xl md:text-7xl font-bold text-primary-foreground mb-6">
-            Textilien & Geschenke
+            Willkommen bei NDA –
             <br />
-            mit Herz
+            Textilien & Geschenkartikel
           </h2>
           <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto font-light">
-            Qualität und Kreativität – handverlesen für Sie, Ihr Unternehmen und Ihren Verein
+            Schöne Dinge zum Verschenken, Wohlfühlen und Dekorieren – direkt hier in Gransee.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-delay">
             <Button size="lg" variant="secondary" className="shadow-elegant">
-              Jetzt entdecken
+              Entdecke unsere Auswahl vor Ort!
             </Button>
           </div>
         </div>
@@ -62,18 +62,17 @@ const Index = () => {
       <section id="about" className="py-20 bg-secondary/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">Über NDA</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">Über uns</h2>
             <div className="flex justify-center mb-8">
               <Heart className="w-12 h-12 text-accent" />
             </div>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              Willkommen bei NDA – Ihrem lokalen Fachgeschäft für hochwertige Textilien und liebevoll gestaltete
-              Geschenkartikel. Mit Leidenschaft für Stoffe, Farben und Kreativität bieten wir Ihnen eine sorgfältig
-              ausgewählte Produktpalette.
+              Bei NDA – Textilien & Geschenkartikel findest du alles, was dein Zuhause gemütlicher macht und was du lieben Menschen schenken kannst.
+              Wir sind ein lokales Geschäft in Gransee und bieten eine abwechslungsreiche Auswahl aus Großhandelsartikeln – sorgfältig zusammengestellt und zu fairen Preisen.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed mb-12">
-              Ob für den privaten Anlass, Ihr Unternehmen oder Ihren Verein – bei uns finden Sie Lösungen, die
-              begeistern. Qualität und persönliche Beratung stehen bei uns an erster Stelle.
+              Unser Sortiment reicht von Textilien über Dekoartikel und Geschenkideen bis hin zu Parfums, Bildern, Teppichen und Schuhen.
+              Wir freuen uns über jeden Besuch – ob du ein besonderes Geschenk suchst oder einfach nur ein wenig stöbern möchtest.
             </p>
 
             {/* Placeholder for team/shop photo */}
@@ -95,9 +94,9 @@ const Index = () => {
       <section id="products" className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Unsere Produkte</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Unsere Highlights</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Entdecken Sie unsere Kategorien mit hochwertigen Textilien und Geschenkartikeln
+              Komm vorbei und entdecke regelmäßig neue Produkte – unser Angebot wechselt stetig!
             </p>
           </div>
 
@@ -108,18 +107,15 @@ const Index = () => {
                 <div className="aspect-square overflow-hidden">
                   <img
                     src={textilesImage}
-                    alt="Hochwertige T-Shirts und Hoodies"
+                    alt="Modische Basics und Accessoires"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-2xl font-bold text-primary mb-3">Textilien</h3>
+                  <h3 className="text-2xl font-bold text-primary mb-3">🧥 Textilien</h3>
                   <p className="text-muted-foreground mb-4">
-                    T-Shirts, Hoodies, Poloshirts und mehr in verschiedenen Farben und Größen. Perfekt für jeden Anlass.
+                    Modische Basics & Accessoires für jeden Stil
                   </p>
-                  <Button variant="outline" className="w-full">
-                    Mehr erfahren
-                  </Button>
                 </div>
               </CardContent>
             </Card>
@@ -130,18 +126,75 @@ const Index = () => {
                 <div className="aspect-square overflow-hidden">
                   <img
                     src={giftsImage}
-                    alt="Geschenkartikel"
+                    alt="Geschenkartikel und kleine Aufmerksamkeiten"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-2xl font-bold text-primary mb-3">Geschenkartikel</h3>
+                  <h3 className="text-2xl font-bold text-primary mb-3">🎁 Geschenkartikel</h3>
                   <p className="text-muted-foreground mb-4">
-                    Tassen, Tragetaschen, gravierte Holzartikel und vieles mehr. Das perfekte Geschenk für jeden Anlass.
+                    Kleine Aufmerksamkeiten für Freunde und Familie
                   </p>
-                  <Button variant="outline" className="w-full">
-                    Mehr erfahren
-                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Deko Category */}
+            <Card className="shadow-soft hover:shadow-elegant transition-all duration-300 overflow-hidden group">
+              <CardContent className="p-0">
+                <div className="aspect-square overflow-hidden bg-muted flex items-center justify-center">
+                  <div className="text-6xl">🕯️</div>
+                </div>
+                <div className="p-6">
+                  <h3 className="text-2xl font-bold text-primary mb-3">🕯️ Dekoartikel</h3>
+                  <p className="text-muted-foreground mb-4">
+                    Für ein schönes Zuhause
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Parfums Category */}
+            <Card className="shadow-soft hover:shadow-elegant transition-all duration-300 overflow-hidden group">
+              <CardContent className="p-0">
+                <div className="aspect-square overflow-hidden bg-muted flex items-center justify-center">
+                  <div className="text-6xl">🌸</div>
+                </div>
+                <div className="p-6">
+                  <h3 className="text-2xl font-bold text-primary mb-3">🌸 Parfums</h3>
+                  <p className="text-muted-foreground mb-4">
+                    Tolle Düfte für jeden Geschmack
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Bilder & Teppiche Category */}
+            <Card className="shadow-soft hover:shadow-elegant transition-all duration-300 overflow-hidden group">
+              <CardContent className="p-0">
+                <div className="aspect-square overflow-hidden bg-muted flex items-center justify-center">
+                  <div className="text-6xl">🖼️</div>
+                </div>
+                <div className="p-6">
+                  <h3 className="text-2xl font-bold text-primary mb-3">🖼️ Bilder & Teppiche</h3>
+                  <p className="text-muted-foreground mb-4">
+                    Kreative Wohnakzente
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Schuhe Category */}
+            <Card className="shadow-soft hover:shadow-elegant transition-all duration-300 overflow-hidden group">
+              <CardContent className="p-0">
+                <div className="aspect-square overflow-hidden bg-muted flex items-center justify-center">
+                  <div className="text-6xl">👟</div>
+                </div>
+                <div className="p-6">
+                  <h3 className="text-2xl font-bold text-primary mb-3">👟 Schuhe</h3>
+                  <p className="text-muted-foreground mb-4">
+                    Bequeme und modische Modelle
+                  </p>
                 </div>
               </CardContent>
             </Card>
@@ -155,7 +208,7 @@ const Index = () => {
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Galerie</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Ein Einblick in unsere Produkte und unser Geschäft
+              Ein kleiner Einblick in unser Sortiment
             </p>
           </div>
 
@@ -177,9 +230,9 @@ const Index = () => {
       <section id="contact" className="py-20 bg-secondary/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Besuchen Sie uns</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Kontakt</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Wir freuen uns auf Ihren Besuch oder Ihre Nachricht
+              Finde uns direkt in der Innenstadt – Parkplätze sind in der Nähe vorhanden
             </p>
           </div>
 
@@ -225,11 +278,11 @@ const Index = () => {
                   <div className="space-y-2 text-sm">
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Montag - Freitag</span>
-                      <span className="font-medium">[00:00 - 00:00 Uhr]</span>
+                      <span className="font-medium">10 – 18 Uhr</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Samstag</span>
-                      <span className="font-medium">[00:00 - 00:00 Uhr]</span>
+                      <span className="font-medium">10 – 14 Uhr</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Sonntag</span>
@@ -297,7 +350,7 @@ const Index = () => {
             <div>
               <h3 className="text-xl font-bold mb-4">NDA – Textilien & Geschenkartikel</h3>
               <p className="text-primary-foreground/80 text-sm">
-                Ihr lokales Fachgeschäft für hochwertige Textilien und Geschenkartikel.
+                Lokales Einkaufen macht Freude – wir freuen uns auf deinen Besuch bei NDA in Gransee!
               </p>
             </div>
             <div>
