@@ -8,6 +8,10 @@ import heroImage from "@/assets/hero-bg.jpg";
 import textilesImage from "@/assets/textiles.jpg";
 import giftsImage from "@/assets/gifts.jpg";
 import customPrintingImage from "@/assets/custom-printing.jpg";
+import dekoImage from "@/assets/deko.jpg";
+import parfumsImage from "@/assets/parfums.jpg";
+import bilderTeppicheImage from "@/assets/bilder-teppiche.jpg";
+import schuheImage from "@/assets/schuhe.jpg";
 
 const Index = () => {
   return (
@@ -142,8 +146,12 @@ const Index = () => {
             {/* Deko Category */}
             <Card className="shadow-soft hover:shadow-elegant transition-all duration-300 overflow-hidden group">
               <CardContent className="p-0">
-                <div className="aspect-square overflow-hidden bg-muted flex items-center justify-center">
-                  <div className="text-6xl">🕯️</div>
+                <div className="aspect-square overflow-hidden">
+                  <img
+                    src={dekoImage}
+                    alt="Dekoartikel für ein schönes Zuhause"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-2xl font-bold text-primary mb-3">🕯️ Dekoartikel</h3>
@@ -157,8 +165,12 @@ const Index = () => {
             {/* Parfums Category */}
             <Card className="shadow-soft hover:shadow-elegant transition-all duration-300 overflow-hidden group">
               <CardContent className="p-0">
-                <div className="aspect-square overflow-hidden bg-muted flex items-center justify-center">
-                  <div className="text-6xl">🌸</div>
+                <div className="aspect-square overflow-hidden">
+                  <img
+                    src={parfumsImage}
+                    alt="Parfums und tolle Düfte für jeden Geschmack"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-2xl font-bold text-primary mb-3">🌸 Parfums</h3>
@@ -172,8 +184,12 @@ const Index = () => {
             {/* Bilder & Teppiche Category */}
             <Card className="shadow-soft hover:shadow-elegant transition-all duration-300 overflow-hidden group">
               <CardContent className="p-0">
-                <div className="aspect-square overflow-hidden bg-muted flex items-center justify-center">
-                  <div className="text-6xl">🖼️</div>
+                <div className="aspect-square overflow-hidden">
+                  <img
+                    src={bilderTeppicheImage}
+                    alt="Bilder, Teppiche und kreative Wohnakzente"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-2xl font-bold text-primary mb-3">🖼️ Bilder & Teppiche</h3>
@@ -187,8 +203,12 @@ const Index = () => {
             {/* Schuhe Category */}
             <Card className="shadow-soft hover:shadow-elegant transition-all duration-300 overflow-hidden group">
               <CardContent className="p-0">
-                <div className="aspect-square overflow-hidden bg-muted flex items-center justify-center">
-                  <div className="text-6xl">👟</div>
+                <div className="aspect-square overflow-hidden">
+                  <img
+                    src={schuheImage}
+                    alt="Bequeme und modische Schuhe"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-2xl font-bold text-primary mb-3">👟 Schuhe</h3>
