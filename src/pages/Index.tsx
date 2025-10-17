@@ -17,10 +17,18 @@ const Index = () => {
           <div className="flex items-center justify-between">
             <h1 className="text-2xl font-bold text-primary">NDA</h1>
             <div className="hidden md:flex gap-6">
-              <a href="#home" className="text-foreground hover:text-primary transition-colors">Start</a>
-              <a href="#about" className="text-foreground hover:text-primary transition-colors">Über uns</a>
-              <a href="#products" className="text-foreground hover:text-primary transition-colors">Produkte</a>
-              <a href="#contact" className="text-foreground hover:text-primary transition-colors">Kontakt</a>
+              <a href="#home" className="text-foreground hover:text-primary transition-colors">
+                Start
+              </a>
+              <a href="#about" className="text-foreground hover:text-primary transition-colors">
+                Über uns
+              </a>
+              <a href="#products" className="text-foreground hover:text-primary transition-colors">
+                Produkte
+              </a>
+              <a href="#contact" className="text-foreground hover:text-primary transition-colors">
+                Kontakt
+              </a>
             </div>
           </div>
         </div>
@@ -28,20 +36,18 @@ const Index = () => {
 
       {/* Hero Section */}
       <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroImage})` }}
-        >
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${heroImage})` }}>
           <div className="absolute inset-0 bg-gradient-to-r from-primary/95 to-primary/80" />
         </div>
-        
+
         <div className="relative z-10 container mx-auto px-4 py-20 text-center animate-fade-in">
           <h2 className="text-5xl md:text-7xl font-bold text-primary-foreground mb-6">
-            Textilien & Geschenke<br />mit Herz
+            Textilien & Geschenke
+            <br />
+            mit Herz
           </h2>
           <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto font-light">
-            Qualität und Kreativität – 
-            handverlesen für Sie, Ihr Unternehmen und Ihren Verein
+            Qualität und Kreativität – handverlesen für Sie, Ihr Unternehmen und Ihren Verein
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-delay">
             <Button size="lg" variant="secondary" className="shadow-elegant">
@@ -60,16 +66,15 @@ const Index = () => {
               <Heart className="w-12 h-12 text-accent" />
             </div>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              Willkommen bei NDA – Ihrem lokalen Fachgeschäft für hochwertige Textilien und 
-              liebevoll gestaltete Geschenkartikel. Mit Leidenschaft für Stoffe, Farben und 
-              Kreativität bieten wir Ihnen eine sorgfältig ausgewählte Produktpalette.
+              Willkommen bei NDA – Ihrem lokalen Fachgeschäft für hochwertige Textilien und liebevoll gestaltete
+              Geschenkartikel. Mit Leidenschaft für Stoffe, Farben und Kreativität bieten wir Ihnen eine sorgfältig
+              ausgewählte Produktpalette.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed mb-12">
-              Ob für den privaten Anlass, Ihr Unternehmen oder Ihren Verein – bei uns finden 
-              Sie Lösungen, die begeistern. Qualität und persönliche Beratung 
-              stehen bei uns an erster Stelle.
+              Ob für den privaten Anlass, Ihr Unternehmen oder Ihren Verein – bei uns finden Sie Lösungen, die
+              begeistern. Qualität und persönliche Beratung stehen bei uns an erster Stelle.
             </p>
-            
+
             {/* Placeholder for team/shop photo */}
             <Card className="shadow-soft overflow-hidden">
               <CardContent className="p-0">
@@ -100,19 +105,20 @@ const Index = () => {
             <Card className="shadow-soft hover:shadow-elegant transition-all duration-300 overflow-hidden group">
               <CardContent className="p-0">
                 <div className="aspect-square overflow-hidden">
-                  <img 
-                    src={textilesImage} 
-                    alt="Hochwertige T-Shirts und Hoodies" 
+                  <img
+                    src={textilesImage}
+                    alt="Hochwertige T-Shirts und Hoodies"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 <div className="p-6">
                   <h3 className="text-2xl font-bold text-primary mb-3">Textilien</h3>
                   <p className="text-muted-foreground mb-4">
-                    T-Shirts, Hoodies, Poloshirts und mehr in verschiedenen Farben und Größen. 
-                    Perfekt für jeden Anlass.
+                    T-Shirts, Hoodies, Poloshirts und mehr in verschiedenen Farben und Größen. Perfekt für jeden Anlass.
                   </p>
-                  <Button variant="outline" className="w-full">Mehr erfahren</Button>
+                  <Button variant="outline" className="w-full">
+                    Mehr erfahren
+                  </Button>
                 </div>
               </CardContent>
             </Card>
@@ -121,27 +127,26 @@ const Index = () => {
             <Card className="shadow-soft hover:shadow-elegant transition-all duration-300 overflow-hidden group">
               <CardContent className="p-0">
                 <div className="aspect-square overflow-hidden">
-                  <img 
-                    src={giftsImage} 
-                    alt="Geschenkartikel" 
+                  <img
+                    src={giftsImage}
+                    alt="Geschenkartikel"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 <div className="p-6">
                   <h3 className="text-2xl font-bold text-primary mb-3">Geschenkartikel</h3>
                   <p className="text-muted-foreground mb-4">
-                    Tassen, Tragetaschen, gravierte Holzartikel und vieles mehr. 
-                    Das perfekte Geschenk für jeden Anlass.
+                    Tassen, Tragetaschen, gravierte Holzartikel und vieles mehr. Das perfekte Geschenk für jeden Anlass.
                   </p>
-                  <Button variant="outline" className="w-full">Mehr erfahren</Button>
+                  <Button variant="outline" className="w-full">
+                    Mehr erfahren
+                  </Button>
                 </div>
               </CardContent>
             </Card>
-
           </div>
         </div>
       </section>
-
 
       {/* Gallery Section */}
       <section id="gallery" className="py-20">
@@ -189,8 +194,9 @@ const Index = () => {
                       <div>
                         <p className="font-semibold">Adresse</p>
                         <p className="text-muted-foreground text-sm">
-                          [Ihre Straße und Hausnummer]<br />
-                          [PLZ und Ort]
+                          [Rudolf-Breitscheid-Str. 65]
+                          <br />
+                          [16775 Gransee]
                         </p>
                       </div>
                     </div>
@@ -251,15 +257,21 @@ const Index = () => {
                 <h3 className="text-2xl font-bold text-primary mb-6">Kontaktformular</h3>
                 <form className="space-y-4">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium mb-2">Name</label>
+                    <label htmlFor="name" className="block text-sm font-medium mb-2">
+                      Name
+                    </label>
                     <Input id="name" placeholder="Ihr Name" />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium mb-2">E-Mail</label>
+                    <label htmlFor="email" className="block text-sm font-medium mb-2">
+                      E-Mail
+                    </label>
                     <Input id="email" type="email" placeholder="ihre.email@beispiel.de" />
                   </div>
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium mb-2">Nachricht</label>
+                    <label htmlFor="message" className="block text-sm font-medium mb-2">
+                      Nachricht
+                    </label>
                     <Textarea id="message" placeholder="Ihre Nachricht an uns..." rows={6} />
                   </div>
                   <Button type="submit" className="w-full shadow-elegant">
@@ -285,10 +297,16 @@ const Index = () => {
             <div>
               <h4 className="font-semibold mb-4">Rechtliches</h4>
               <div className="space-y-2 text-sm">
-                <a href="#impressum" className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                <a
+                  href="#impressum"
+                  className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                >
                   Impressum
                 </a>
-                <a href="#datenschutz" className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                <a
+                  href="#datenschutz"
+                  className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                >
                   Datenschutz
                 </a>
               </div>
