@@ -239,14 +239,19 @@ const Index = () => {
                 </CardContent>
               </Card>
 
-              {/* Map Placeholder */}
+              {/* Google Maps */}
               <Card className="shadow-soft overflow-hidden">
                 <CardContent className="p-0">
-                  <div className="aspect-video bg-muted flex items-center justify-center">
-                    <div className="text-center text-muted-foreground">
-                      <MapPin className="w-12 h-12 mx-auto mb-2 opacity-50" />
-                      <p className="text-sm">Google Maps Einbettung</p>
-                    </div>
+                  <div className="aspect-video">
+                    <iframe 
+                      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d300.09419646248574!2d13.1570846!3d53.0068152!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a90d53305568c1%3A0x468ff83af563f7ab!2sNda-kaufhaus!5e0!3m2!1sen!2sde!4v1760735113586!5m2!1sen!2sde" 
+                      className="w-full h-full"
+                      style={{ border: 0 }} 
+                      allowFullScreen 
+                      loading="lazy" 
+                      referrerPolicy="no-referrer-when-downgrade"
+                      title="NDA Standort auf Google Maps"
+                    />
                   </div>
                 </CardContent>
               </Card>
