@@ -194,9 +194,9 @@ const Index = () => {
                       <div>
                         <p className="font-semibold">Adresse</p>
                         <p className="text-muted-foreground text-sm">
-                          [Rudolf-Breitscheid-Str. 65]
+                          Rudolf-Breitscheid-Str. 65
                           <br />
-                          [16775 Gransee]
+                          16775 Gransee
                         </p>
                       </div>
                     </div>
@@ -211,7 +211,7 @@ const Index = () => {
                       <Mail className="w-5 h-5 text-accent mt-1" />
                       <div>
                         <p className="font-semibold">E-Mail</p>
-                        <p className="text-muted-foreground text-sm">[Ihre E-Mail-Adresse]</p>
+                        <p className="text-muted-foreground text-sm">info@nda-gransee.de</p>
                       </div>
                     </div>
                   </div>
