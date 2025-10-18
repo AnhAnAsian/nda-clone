@@ -209,6 +209,27 @@ All colors MUST be HSL.
     --gradient-accent: linear-gradient(135deg, hsl(25 85% 60%), hsl(25 80% 68%));
     --gradient-hero: linear-gradient(135deg, hsl(345 80% 40% / 0.98), hsl(345 75% 48% / 0.95), hsl(345 70% 55% / 0.92));
   }
+
+  /* Dark Elegant Theme */
+  .theme-dark-elegant {
+    --background: 240 15% 8%;
+    --foreground: 40 30% 95%;
+    --primary: 280 50% 55%;
+    --primary-foreground: 40 30% 98%;
+    --primary-light: 280 45% 70%;
+    --primary-dark: 280 55% 40%;
+    --secondary: 240 12% 15%;
+    --secondary-foreground: 40 30% 95%;
+    --accent: 320 60% 60%;
+    --accent-foreground: 0 0% 100%;
+    --accent-light: 320 55% 70%;
+    --accent-dark: 320 65% 50%;
+    --muted: 240 12% 15%;
+    --border: 240 15% 20%;
+    --gradient-primary: linear-gradient(135deg, hsl(280 50% 55%), hsl(280 45% 65%));
+    --gradient-accent: linear-gradient(135deg, hsl(320 60% 60%), hsl(320 55% 68%));
+    --gradient-hero: linear-gradient(135deg, hsl(280 55% 40% / 0.98), hsl(280 50% 50% / 0.95), hsl(280 45% 60% / 0.92));
+  }
 }
 
 @layer base {

@@ -22,11 +22,7 @@ import storeShoes from "@/assets/store-shoes.jpg";
 
 const themes = [
   { name: "Midnight Gold", class: "theme-midnight" },
-  { name: "Ocean Breeze", class: "theme-ocean" },
-  { name: "Royal Purple", class: "theme-purple" },
-  { name: "Burgundy Luxe", class: "theme-burgundy" },
-  { name: "Elegant Forest", class: "" },
-  { name: "Sunset Coral", class: "theme-sunset" },
+  { name: "Dark Elegant", class: "theme-dark-elegant" },
 ];
 
 const Index = () => {
