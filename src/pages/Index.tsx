@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Heart, Users, Mail, Phone, MapPin } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ThemeSwitcher } from "@/components/ThemeSwitcher";
 import heroImage from "@/assets/hero-bg.jpg";
 import textilesImage from "@/assets/textiles.jpg";
@@ -20,9 +20,25 @@ import storeBags from "@/assets/store-bags.jpg";
 import storeClothing from "@/assets/store-clothing.jpg";
 import storeShoes from "@/assets/store-shoes.jpg";
 
+const themes = [
+  { name: "Midnight Gold", class: "theme-midnight" },
+  { name: "Ocean Breeze", class: "theme-ocean" },
+  { name: "Royal Purple", class: "theme-purple" },
+  { name: "Burgundy Luxe", class: "theme-burgundy" },
+  { name: "Elegant Forest", class: "" },
+  { name: "Sunset Coral", class: "theme-sunset" },
+];
+
 const Index = () => {
   const [isHeartAnimating, setIsHeartAnimating] = useState(false);
   const [particles, setParticles] = useState<Array<{ id: number; x: number; y: number }>>([]);
+  const [currentTheme, setCurrentTheme] = useState(0);
+
+  // Apply default theme on mount
+  useEffect(() => {
+    const root = document.documentElement;
+    root.classList.add("theme-midnight");
+  }, []);
 
   const handleHeartClick = () => {
     setIsHeartAnimating(true);
@@ -35,6 +51,23 @@ const Index = () => {
     }));
     
     setParticles(newParticles);
+    
+    // Change theme
+    const root = document.documentElement;
+    const currentClass = themes[currentTheme].class;
+    
+    if (currentClass) {
+      root.classList.remove(currentClass);
+    }
+
+    const nextTheme = (currentTheme + 1) % themes.length;
+    const nextClass = themes[nextTheme].class;
+    
+    if (nextClass) {
+      root.classList.add(nextClass);
+    }
+
+    setCurrentTheme(nextTheme);
     
     setTimeout(() => {
       setIsHeartAnimating(false);
