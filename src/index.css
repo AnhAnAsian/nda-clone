@@ -244,17 +244,26 @@ All colors MUST be HSL.
 @layer base {
   * {
     @apply border-border;
-    transition: background-color 0.8s ease-in-out, color 0.8s ease-in-out, border-color 0.8s ease-in-out;
   }
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
     font-family: 'Poppins', sans-serif;
+    transition: background-color 0.8s ease-in-out, color 0.8s ease-in-out;
   }
   
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
+    transition: color 0.8s ease-in-out;
+  }
+
+  section, nav, div, button, a, p, span {
+    transition: background-color 0.8s ease-in-out, color 0.8s ease-in-out, border-color 0.8s ease-in-out, fill 0.8s ease-in-out, stroke 0.8s ease-in-out;
+  }
+
+  svg {
+    transition: fill 0.8s ease-in-out, stroke 0.8s ease-in-out, color 0.8s ease-in-out;
   }
 }
 
