@@ -6,6 +6,12 @@ import { Textarea } from "@/components/ui/textarea";
 import { Heart, Users, Mail, Phone, MapPin } from "lucide-react";
 import { useState } from "react";
 import heroImage from "@/assets/hero-bg.jpg";
+import textilesImage from "@/assets/textiles.jpg";
+import giftsImage from "@/assets/gifts.jpg";
+import dekoImage from "@/assets/deko.jpg";
+import parfumsImage from "@/assets/parfums.jpg";
+import bilderTeppicheImage from "@/assets/bilder-teppiche.jpg";
+import schuheImage from "@/assets/schuhe.jpg";
 import storeFront from "@/assets/store-front.jpg";
 import storeInterior1 from "@/assets/store-interior-1.jpg";
 import storeInterior2 from "@/assets/store-interior-2.jpg";
@@ -175,7 +181,7 @@ const Index = () => {
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/5 to-primary/10 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10"></div>
                   <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                   <img
-                    src={storeClothing}
+                    src={textilesImage}
                     alt="Modische Basics und Accessoires"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                   />
@@ -196,7 +202,7 @@ const Index = () => {
                   <div className="absolute inset-0 bg-gradient-to-br from-accent/0 via-accent/5 to-accent/10 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10"></div>
                   <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                   <img
-                    src={storeBags}
+                    src={giftsImage}
                     alt="Geschenkartikel und kleine Aufmerksamkeiten"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                   />
@@ -217,7 +223,7 @@ const Index = () => {
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/5 to-primary/10 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10"></div>
                   <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                   <img
-                    src={storeInterior2}
+                    src={dekoImage}
                     alt="Dekoartikel für ein schönes Zuhause"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                   />
@@ -238,7 +244,7 @@ const Index = () => {
                   <div className="absolute inset-0 bg-gradient-to-br from-accent/0 via-accent/5 to-accent/10 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10"></div>
                   <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                   <img
-                    src={storeInterior1}
+                    src={parfumsImage}
                     alt="Parfums und tolle Düfte für jeden Geschmack"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                   />
@@ -259,7 +265,7 @@ const Index = () => {
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/5 to-primary/10 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10"></div>
                   <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                   <img
-                    src={storeInterior1}
+                    src={bilderTeppicheImage}
                     alt="Bilder, Teppiche und kreative Wohnakzente"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                   />
@@ -280,7 +286,7 @@ const Index = () => {
                   <div className="absolute inset-0 bg-gradient-to-br from-accent/0 via-accent/5 to-accent/10 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10"></div>
                   <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                   <img
-                    src={storeShoes}
+                    src={schuheImage}
                     alt="Bequeme und modische Schuhe"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                   />
