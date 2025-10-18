@@ -44,8 +44,6 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
-      <ThemeSwitcher />
-      
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-xl border-b border-border shadow-xs">
         <div className="container mx-auto px-6 py-4">
@@ -53,23 +51,26 @@ const Index = () => {
             <h1 className="text-3xl font-bold">
               <span className="bg-gradient-primary bg-clip-text text-transparent">NDA</span>
             </h1>
-            <div className="hidden md:flex gap-8">
-              <a href="#home" className="text-foreground/70 hover:text-primary transition-all duration-300 font-medium text-sm tracking-wide uppercase relative group">
-                <span className="relative z-10">Start</span>
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-accent group-hover:w-full transition-all duration-300"></span>
-              </a>
-              <a href="#about" className="text-foreground/70 hover:text-primary transition-all duration-300 font-medium text-sm tracking-wide uppercase relative group">
-                <span className="relative z-10">Über uns</span>
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-accent group-hover:w-full transition-all duration-300"></span>
-              </a>
-              <a href="#products" className="text-foreground/70 hover:text-primary transition-all duration-300 font-medium text-sm tracking-wide uppercase relative group">
-                <span className="relative z-10">Produkte</span>
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-accent group-hover:w-full transition-all duration-300"></span>
-              </a>
-              <a href="#contact" className="text-foreground/70 hover:text-primary transition-all duration-300 font-medium text-sm tracking-wide uppercase relative group">
-                <span className="relative z-10">Kontakt</span>
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-accent group-hover:w-full transition-all duration-300"></span>
-              </a>
+            <div className="flex items-center gap-6">
+              <div className="hidden md:flex gap-8">
+                <a href="#home" className="text-foreground/70 hover:text-primary transition-all duration-300 font-medium text-sm tracking-wide uppercase relative group">
+                  <span className="relative z-10">Start</span>
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-accent group-hover:w-full transition-all duration-300"></span>
+                </a>
+                <a href="#about" className="text-foreground/70 hover:text-primary transition-all duration-300 font-medium text-sm tracking-wide uppercase relative group">
+                  <span className="relative z-10">Über uns</span>
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-accent group-hover:w-full transition-all duration-300"></span>
+                </a>
+                <a href="#products" className="text-foreground/70 hover:text-primary transition-all duration-300 font-medium text-sm tracking-wide uppercase relative group">
+                  <span className="relative z-10">Produkte</span>
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-accent group-hover:w-full transition-all duration-300"></span>
+                </a>
+                <a href="#contact" className="text-foreground/70 hover:text-primary transition-all duration-300 font-medium text-sm tracking-wide uppercase relative group">
+                  <span className="relative z-10">Kontakt</span>
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-accent group-hover:w-full transition-all duration-300"></span>
+                </a>
+              </div>
+              <ThemeSwitcher />
             </div>
           </div>
         </div>

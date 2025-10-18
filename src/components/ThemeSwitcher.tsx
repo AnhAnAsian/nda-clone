@@ -33,18 +33,13 @@ export const ThemeSwitcher = () => {
   };
 
   return (
-    <div className="fixed top-4 right-4 z-50 flex flex-col items-end gap-2">
-      <Button
-        onClick={switchTheme}
-        size="lg"
-        className="shadow-elegant hover:shadow-accent transition-all duration-300"
-      >
-        <Palette className="mr-2 h-5 w-5" />
-        {themes[currentTheme].name}
-      </Button>
-      <span className="text-xs text-muted-foreground bg-background/90 px-2 py-1 rounded">
-        Click to try different themes
-      </span>
-    </div>
+    <Button
+      onClick={switchTheme}
+      size="sm"
+      variant="outline"
+      className="transition-all duration-300"
+    >
+      <Palette className="h-4 w-4" />
+    </Button>
   );
 };
