@@ -213,29 +213,31 @@ All colors MUST be HSL.
   /* Dark Elegant Theme */
   .theme-dark-elegant {
     --background: 30 8% 12%;
-    --foreground: 40 20% 88%;
-    --primary: 40 15% 75%;
+    --foreground: 40 25% 92%;
+    --card: 30 10% 15%;
+    --card-foreground: 40 25% 92%;
+    --primary: 42 70% 75%;
     --primary-foreground: 30 8% 12%;
-    --primary-light: 40 20% 85%;
-    --primary-dark: 40 12% 65%;
+    --primary-light: 42 68% 82%;
+    --primary-dark: 42 72% 68%;
     --secondary: 30 10% 18%;
-    --secondary-foreground: 40 20% 88%;
-    --accent: 42 78% 65%;
+    --secondary-foreground: 40 25% 92%;
+    --accent: 42 82% 68%;
     --accent-foreground: 30 8% 12%;
-    --accent-light: 42 75% 75%;
-    --accent-dark: 42 82% 55%;
+    --accent-light: 42 78% 78%;
+    --accent-dark: 42 85% 60%;
     --muted: 30 10% 20%;
-    --muted-foreground: 40 15% 65%;
-    --border: 30 12% 22%;
+    --muted-foreground: 40 20% 75%;
+    --border: 30 12% 25%;
     --input: 30 12% 20%;
-    --ring: 42 78% 65%;
-    --gradient-primary: linear-gradient(135deg, hsl(40 15% 75%), hsl(40 20% 82%));
-    --gradient-primary-soft: linear-gradient(135deg, hsl(40 15% 75% / 0.08), hsl(40 20% 80% / 0.12));
-    --gradient-accent: linear-gradient(135deg, hsl(42 78% 65%), hsl(42 75% 72%));
-    --gradient-accent-soft: linear-gradient(135deg, hsl(42 78% 65% / 0.12), hsl(42 75% 70% / 0.08));
+    --ring: 42 82% 68%;
+    --gradient-primary: linear-gradient(135deg, hsl(42 70% 75%), hsl(42 68% 80%));
+    --gradient-primary-soft: linear-gradient(135deg, hsl(42 70% 75% / 0.08), hsl(42 68% 78% / 0.12));
+    --gradient-accent: linear-gradient(135deg, hsl(42 82% 68%), hsl(42 78% 75%));
+    --gradient-accent-soft: linear-gradient(135deg, hsl(42 82% 68% / 0.12), hsl(42 78% 72% / 0.08));
     --gradient-hero: linear-gradient(135deg, hsl(30 10% 10% / 0.98), hsl(30 8% 14% / 0.95), hsl(30 10% 18% / 0.92));
     --gradient-warm: linear-gradient(135deg, hsl(30 10% 16%), hsl(30 8% 14%));
-    --gradient-card: linear-gradient(145deg, hsl(30 10% 15%), hsl(30 8% 13%));
+    --gradient-card: linear-gradient(145deg, hsl(30 10% 16%), hsl(30 8% 14%));
   }
 }
 
