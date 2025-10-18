@@ -1,18 +1,24 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Palette } from "lucide-react";
 
 const themes = [
-  { name: "Elegant Forest", class: "" },
+  { name: "Midnight Gold", class: "theme-midnight" },
   { name: "Ocean Breeze", class: "theme-ocean" },
   { name: "Royal Purple", class: "theme-purple" },
   { name: "Burgundy Luxe", class: "theme-burgundy" },
-  { name: "Midnight Gold", class: "theme-midnight" },
+  { name: "Elegant Forest", class: "" },
   { name: "Sunset Coral", class: "theme-sunset" },
 ];
 
 export const ThemeSwitcher = () => {
   const [currentTheme, setCurrentTheme] = useState(0);
+
+  // Apply default theme on mount
+  useEffect(() => {
+    const root = document.documentElement;
+    root.classList.add("theme-midnight");
+  }, []);
 
   const switchTheme = () => {
     const root = document.documentElement;
