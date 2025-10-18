@@ -211,19 +211,19 @@ const Index = () => {
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Textiles Category */}
-            <Card className="shadow-medium hover:shadow-elegant transition-all duration-500 overflow-hidden group bg-card border border-border/50 rounded-2xl">
+            <Card className="shadow-medium hover:shadow-elegant transition-all duration-[800ms] ease-in-out overflow-hidden group bg-card border border-border/50 rounded-2xl">
               <CardContent className="p-0">
                 <div className="aspect-square overflow-hidden relative">
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/5 to-primary/10 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10"></div>
-                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/5 to-primary/10 opacity-0 group-hover:opacity-100 transition-all duration-[800ms] ease-in-out z-10"></div>
+                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-[800ms] ease-in-out origin-left"></div>
                   <img
                     src={textilesImage}
                     alt="Modische Basics und Accessoires"
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[800ms] ease-in-out"
                   />
                 </div>
                 <div className="p-8">
-                  <h3 className="text-2xl font-bold text-primary mb-3 group-hover:bg-gradient-primary group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">🧥 Textilien</h3>
+                  <h3 className="text-2xl font-bold text-primary mb-3 group-hover:bg-gradient-primary group-hover:bg-clip-text group-hover:text-transparent transition-all duration-[800ms] ease-in-out">🧥 Textilien</h3>
                   <p className="text-muted-foreground leading-relaxed">
                     Modische Basics & Accessoires für jeden Stil
                   </p>
@@ -232,19 +232,19 @@ const Index = () => {
             </Card>
 
             {/* Gifts Category */}
-            <Card className="shadow-medium hover:shadow-elegant transition-all duration-500 overflow-hidden group bg-card border border-border/50 rounded-2xl">
+            <Card className="shadow-medium hover:shadow-elegant transition-all duration-[800ms] ease-in-out overflow-hidden group bg-card border border-border/50 rounded-2xl">
               <CardContent className="p-0">
                 <div className="aspect-square overflow-hidden relative">
-                  <div className="absolute inset-0 bg-gradient-to-br from-accent/0 via-accent/5 to-accent/10 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10"></div>
-                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-accent/0 via-accent/5 to-accent/10 opacity-0 group-hover:opacity-100 transition-all duration-[800ms] ease-in-out z-10"></div>
+                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-[800ms] ease-in-out origin-left"></div>
                   <img
                     src={giftsImage}
                     alt="Geschenkartikel und kleine Aufmerksamkeiten"
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[800ms] ease-in-out"
                   />
                 </div>
                 <div className="p-8">
-                  <h3 className="text-2xl font-bold text-primary mb-3 group-hover:bg-gradient-accent group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">🎁 Geschenkartikel</h3>
+                  <h3 className="text-2xl font-bold text-primary mb-3 group-hover:bg-gradient-accent group-hover:bg-clip-text group-hover:text-transparent transition-all duration-[800ms] ease-in-out">🎁 Geschenkartikel</h3>
                   <p className="text-muted-foreground leading-relaxed">
                     Kleine Aufmerksamkeiten für Freunde und Familie
                   </p>
@@ -253,19 +253,19 @@ const Index = () => {
             </Card>
 
             {/* Deko Category */}
-            <Card className="shadow-medium hover:shadow-elegant transition-all duration-500 overflow-hidden group bg-card border border-border/50 rounded-2xl">
+            <Card className="shadow-medium hover:shadow-elegant transition-all duration-[800ms] ease-in-out overflow-hidden group bg-card border border-border/50 rounded-2xl">
               <CardContent className="p-0">
                 <div className="aspect-square overflow-hidden relative">
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/5 to-primary/10 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10"></div>
-                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/5 to-primary/10 opacity-0 group-hover:opacity-100 transition-all duration-[800ms] ease-in-out z-10"></div>
+                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-[800ms] ease-in-out origin-left"></div>
                   <img
                     src={dekoImage}
                     alt="Dekoartikel für ein schönes Zuhause"
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[800ms] ease-in-out"
                   />
                 </div>
                 <div className="p-8">
-                  <h3 className="text-2xl font-bold text-primary mb-3 group-hover:bg-gradient-primary group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">🕯️ Dekoartikel</h3>
+                  <h3 className="text-2xl font-bold text-primary mb-3 group-hover:bg-gradient-primary group-hover:bg-clip-text group-hover:text-transparent transition-all duration-[800ms] ease-in-out">🕯️ Dekoartikel</h3>
                   <p className="text-muted-foreground leading-relaxed">
                     Für ein schönes Zuhause
                   </p>
@@ -274,19 +274,19 @@ const Index = () => {
             </Card>
 
             {/* Taschen & Rucksäcke Category */}
-            <Card className="shadow-medium hover:shadow-elegant transition-all duration-500 overflow-hidden group bg-card border border-border/50 rounded-2xl">
+            <Card className="shadow-medium hover:shadow-elegant transition-all duration-[800ms] ease-in-out overflow-hidden group bg-card border border-border/50 rounded-2xl">
               <CardContent className="p-0">
                 <div className="aspect-square overflow-hidden relative">
-                  <div className="absolute inset-0 bg-gradient-to-br from-accent/0 via-accent/5 to-accent/10 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10"></div>
-                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-accent/0 via-accent/5 to-accent/10 opacity-0 group-hover:opacity-100 transition-all duration-[800ms] ease-in-out z-10"></div>
+                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-[800ms] ease-in-out origin-left"></div>
                   <img
                     src={taschenRucksaeckeImage}
                     alt="Taschen und Rucksäcke für jeden Anlass"
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[800ms] ease-in-out"
                   />
                 </div>
                 <div className="p-8">
-                  <h3 className="text-2xl font-bold text-primary mb-3 group-hover:bg-gradient-accent group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">👜 Taschen und Rucksäcke</h3>
+                  <h3 className="text-2xl font-bold text-primary mb-3 group-hover:bg-gradient-accent group-hover:bg-clip-text group-hover:text-transparent transition-all duration-[800ms] ease-in-out">👜 Taschen und Rucksäcke</h3>
                   <p className="text-muted-foreground leading-relaxed">
                     Stylische Begleiter für jeden Anlass
                   </p>
@@ -295,19 +295,19 @@ const Index = () => {
             </Card>
 
             {/* Bilder & Teppiche Category */}
-            <Card className="shadow-medium hover:shadow-elegant transition-all duration-500 overflow-hidden group bg-card border border-border/50 rounded-2xl">
+            <Card className="shadow-medium hover:shadow-elegant transition-all duration-[800ms] ease-in-out overflow-hidden group bg-card border border-border/50 rounded-2xl">
               <CardContent className="p-0">
                 <div className="aspect-square overflow-hidden relative">
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/5 to-primary/10 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10"></div>
-                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/5 to-primary/10 opacity-0 group-hover:opacity-100 transition-all duration-[800ms] ease-in-out z-10"></div>
+                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-[800ms] ease-in-out origin-left"></div>
                   <img
                     src={bilderTeppicheImage}
                     alt="Bilder, Teppiche und kreative Wohnakzente"
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[800ms] ease-in-out"
                   />
                 </div>
                 <div className="p-8">
-                  <h3 className="text-2xl font-bold text-primary mb-3 group-hover:bg-gradient-primary group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">🖼️ Bilder & Teppiche</h3>
+                  <h3 className="text-2xl font-bold text-primary mb-3 group-hover:bg-gradient-primary group-hover:bg-clip-text group-hover:text-transparent transition-all duration-[800ms] ease-in-out">🖼️ Bilder & Teppiche</h3>
                   <p className="text-muted-foreground leading-relaxed">
                     Kreative Wohnakzente
                   </p>
@@ -316,19 +316,19 @@ const Index = () => {
             </Card>
 
             {/* Schuhe Category */}
-            <Card className="shadow-medium hover:shadow-elegant transition-all duration-500 overflow-hidden group bg-card border border-border/50 rounded-2xl">
+            <Card className="shadow-medium hover:shadow-elegant transition-all duration-[800ms] ease-in-out overflow-hidden group bg-card border border-border/50 rounded-2xl">
               <CardContent className="p-0">
                 <div className="aspect-square overflow-hidden relative">
-                  <div className="absolute inset-0 bg-gradient-to-br from-accent/0 via-accent/5 to-accent/10 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10"></div>
-                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-accent/0 via-accent/5 to-accent/10 opacity-0 group-hover:opacity-100 transition-all duration-[800ms] ease-in-out z-10"></div>
+                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-[800ms] ease-in-out origin-left"></div>
                   <img
                     src={storeShoes}
                     alt="Bequeme und modische Schuhe"
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[800ms] ease-in-out"
                   />
                 </div>
                 <div className="p-8">
-                  <h3 className="text-2xl font-bold text-primary mb-3 group-hover:bg-gradient-accent group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">👟 Schuhe</h3>
+                  <h3 className="text-2xl font-bold text-primary mb-3 group-hover:bg-gradient-accent group-hover:bg-clip-text group-hover:text-transparent transition-all duration-[800ms] ease-in-out">👟 Schuhe</h3>
                   <p className="text-muted-foreground leading-relaxed">
                     Bequeme und modische Modelle
                   </p>
@@ -353,28 +353,28 @@ const Index = () => {
             <Card className="shadow-soft overflow-hidden group cursor-pointer">
               <CardContent className="p-0">
                 <div className="aspect-square overflow-hidden">
-                  <img src={storeInterior1} alt="Innenansicht des Geschäfts" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <img src={storeInterior1} alt="Innenansicht des Geschäfts" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[800ms] ease-in-out" />
                 </div>
               </CardContent>
             </Card>
             <Card className="shadow-soft overflow-hidden group cursor-pointer">
               <CardContent className="p-0">
                 <div className="aspect-square overflow-hidden">
-                  <img src={storeInterior2} alt="Textilien in vielen Farben" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <img src={storeInterior2} alt="Textilien in vielen Farben" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[800ms] ease-in-out" />
                 </div>
               </CardContent>
             </Card>
             <Card className="shadow-soft overflow-hidden group cursor-pointer">
               <CardContent className="p-0">
                 <div className="aspect-square overflow-hidden">
-                  <img src={storeBags} alt="Taschen und Accessoires" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <img src={storeBags} alt="Taschen und Accessoires" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[800ms] ease-in-out" />
                 </div>
               </CardContent>
             </Card>
             <Card className="shadow-soft overflow-hidden group cursor-pointer">
               <CardContent className="p-0">
                 <div className="aspect-square overflow-hidden">
-                  <img src={storeClothing} alt="Kleidung im Geschäft" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <img src={storeClothing} alt="Kleidung im Geschäft" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[800ms] ease-in-out" />
                 </div>
               </CardContent>
             </Card>
