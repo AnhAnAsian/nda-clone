@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Heart, Users, Mail, Phone, MapPin } from "lucide-react";
+import { useState } from "react";
 import heroImage from "@/assets/hero-bg.jpg";
 import textilesImage from "@/assets/textiles.jpg";
 import giftsImage from "@/assets/gifts.jpg";
@@ -14,6 +15,27 @@ import bilderTeppicheImage from "@/assets/bilder-teppiche.jpg";
 import schuheImage from "@/assets/schuhe.jpg";
 
 const Index = () => {
+  const [isHeartAnimating, setIsHeartAnimating] = useState(false);
+  const [particles, setParticles] = useState<Array<{ id: number; x: number; y: number }>>([]);
+
+  const handleHeartClick = () => {
+    setIsHeartAnimating(true);
+    
+    // Create floating particles
+    const newParticles = Array.from({ length: 12 }, (_, i) => ({
+      id: Date.now() + i,
+      x: Math.random() * 100 - 50,
+      y: Math.random() * 100 - 50,
+    }));
+    
+    setParticles(newParticles);
+    
+    setTimeout(() => {
+      setIsHeartAnimating(false);
+      setParticles([]);
+    }, 1000);
+  };
+
   return (
     <div className="min-h-screen">
       {/* Navigation */}
@@ -87,9 +109,27 @@ const Index = () => {
             <div className="flex justify-center mb-12">
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-accent rounded-full blur-xl opacity-30"></div>
-                <div className="relative bg-gradient-accent p-5 rounded-full shadow-accent">
-                  <Heart className="w-10 h-10 text-white" />
-                </div>
+                <button 
+                  onClick={handleHeartClick}
+                  className="relative bg-gradient-accent p-5 rounded-full shadow-accent cursor-pointer transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-accent/50 focus:ring-offset-2"
+                >
+                  <Heart 
+                    className={`w-10 h-10 text-white transition-all duration-500 ${
+                      isHeartAnimating ? 'animate-heart-beat fill-white scale-125' : ''
+                    }`}
+                  />
+                  
+                  {/* Floating particles */}
+                  {particles.map((particle) => (
+                    <Heart
+                      key={particle.id}
+                      className="absolute top-1/2 left-1/2 w-4 h-4 text-accent-light fill-accent-light pointer-events-none animate-heart-float"
+                      style={{
+                        transform: `translate(${particle.x}px, ${particle.y}px)`,
+                      }}
+                    />
+                  ))}
+                </button>
               </div>
             </div>
             <p className="text-xl text-foreground/70 leading-relaxed mb-8">

@@ -173,4 +173,41 @@ All colors MUST be HSL.
       background-position: 200% center;
     }
   }
+  
+  @keyframes heartBeat {
+    0%, 100% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(1.2);
+    }
+    50% {
+      transform: scale(0.95);
+    }
+    75% {
+      transform: scale(1.1);
+    }
+  }
+  
+  @keyframes heartFloat {
+    0% {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(0);
+    }
+    50% {
+      opacity: 0.8;
+    }
+    100% {
+      opacity: 0;
+      transform: translate(calc(-50% + var(--float-x, 0px)), calc(-50% + var(--float-y, 0px))) scale(1.5);
+    }
+  }
+  
+  .animate-heart-beat {
+    animation: heartBeat 0.6s ease-in-out;
+  }
+  
+  .animate-heart-float {
+    animation: heartFloat 1s ease-out forwards;
+  }
 }
