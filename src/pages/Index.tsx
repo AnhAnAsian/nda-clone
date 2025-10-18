@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Heart, Users, Mail, Phone, MapPin } from "lucide-react";
 import { useState } from "react";
+import { ThemeSwitcher } from "@/components/ThemeSwitcher";
 import heroImage from "@/assets/hero-bg.jpg";
 import textilesImage from "@/assets/textiles.jpg";
 import giftsImage from "@/assets/gifts.jpg";
@@ -43,6 +44,8 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
+      <ThemeSwitcher />
+      
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-xl border-b border-border shadow-xs">
         <div className="container mx-auto px-6 py-4">

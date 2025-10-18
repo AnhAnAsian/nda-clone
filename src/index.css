@@ -104,6 +104,111 @@ All colors MUST be HSL.
     --input: 220 15% 20%;
     --ring: 165 35% 55%;
   }
+
+  /* Ocean Breeze Theme */
+  .theme-ocean {
+    --background: 200 30% 98%;
+    --foreground: 210 20% 20%;
+    --primary: 200 80% 40%;
+    --primary-foreground: 200 30% 98%;
+    --primary-light: 200 70% 55%;
+    --primary-dark: 200 85% 30%;
+    --secondary: 200 25% 95%;
+    --secondary-foreground: 210 20% 20%;
+    --accent: 15 85% 65%;
+    --accent-foreground: 0 0% 100%;
+    --accent-light: 15 80% 75%;
+    --accent-dark: 15 90% 55%;
+    --muted: 200 20% 95%;
+    --border: 200 20% 88%;
+    --gradient-primary: linear-gradient(135deg, hsl(200 80% 40%), hsl(200 70% 50%));
+    --gradient-accent: linear-gradient(135deg, hsl(15 85% 65%), hsl(15 80% 72%));
+    --gradient-hero: linear-gradient(135deg, hsl(200 85% 30% / 0.98), hsl(200 80% 38% / 0.95), hsl(200 75% 45% / 0.92));
+  }
+
+  /* Royal Purple Theme */
+  .theme-purple {
+    --background: 270 30% 98%;
+    --foreground: 270 20% 20%;
+    --primary: 270 60% 45%;
+    --primary-foreground: 270 30% 98%;
+    --primary-light: 270 55% 60%;
+    --primary-dark: 270 65% 35%;
+    --secondary: 270 25% 95%;
+    --secondary-foreground: 270 20% 20%;
+    --accent: 45 90% 60%;
+    --accent-foreground: 270 60% 20%;
+    --accent-light: 45 85% 70%;
+    --accent-dark: 45 95% 50%;
+    --muted: 270 20% 95%;
+    --border: 270 20% 88%;
+    --gradient-primary: linear-gradient(135deg, hsl(270 60% 45%), hsl(270 55% 55%));
+    --gradient-accent: linear-gradient(135deg, hsl(45 90% 60%), hsl(45 85% 68%));
+    --gradient-hero: linear-gradient(135deg, hsl(270 65% 35% / 0.98), hsl(270 60% 42% / 0.95), hsl(270 55% 50% / 0.92));
+  }
+
+  /* Burgundy Luxe Theme */
+  .theme-burgundy {
+    --background: 350 25% 98%;
+    --foreground: 350 20% 20%;
+    --primary: 350 60% 40%;
+    --primary-foreground: 350 25% 98%;
+    --primary-light: 350 55% 55%;
+    --primary-dark: 350 65% 30%;
+    --secondary: 40 35% 95%;
+    --secondary-foreground: 350 20% 20%;
+    --accent: 40 70% 70%;
+    --accent-foreground: 350 60% 20%;
+    --accent-light: 40 65% 80%;
+    --accent-dark: 40 75% 60%;
+    --muted: 350 20% 95%;
+    --border: 350 20% 88%;
+    --gradient-primary: linear-gradient(135deg, hsl(350 60% 40%), hsl(350 55% 48%));
+    --gradient-accent: linear-gradient(135deg, hsl(40 70% 70%), hsl(40 65% 78%));
+    --gradient-hero: linear-gradient(135deg, hsl(350 65% 30% / 0.98), hsl(350 60% 38% / 0.95), hsl(350 55% 45% / 0.92));
+  }
+
+  /* Midnight Gold Theme */
+  .theme-midnight {
+    --background: 220 30% 98%;
+    --foreground: 220 25% 20%;
+    --primary: 220 50% 35%;
+    --primary-foreground: 220 30% 98%;
+    --primary-light: 220 45% 50%;
+    --primary-dark: 220 55% 25%;
+    --secondary: 220 25% 95%;
+    --secondary-foreground: 220 25% 20%;
+    --accent: 40 85% 55%;
+    --accent-foreground: 220 50% 20%;
+    --accent-light: 40 80% 65%;
+    --accent-dark: 40 90% 45%;
+    --muted: 220 20% 95%;
+    --border: 220 20% 88%;
+    --gradient-primary: linear-gradient(135deg, hsl(220 50% 35%), hsl(220 45% 45%));
+    --gradient-accent: linear-gradient(135deg, hsl(40 85% 55%), hsl(40 80% 63%));
+    --gradient-hero: linear-gradient(135deg, hsl(220 55% 25% / 0.98), hsl(220 50% 33% / 0.95), hsl(220 45% 40% / 0.92));
+  }
+
+  /* Sunset Coral Theme */
+  .theme-sunset {
+    --background: 25 35% 98%;
+    --foreground: 25 25% 20%;
+    --primary: 345 75% 50%;
+    --primary-foreground: 25 35% 98%;
+    --primary-light: 345 70% 65%;
+    --primary-dark: 345 80% 40%;
+    --secondary: 25 30% 95%;
+    --secondary-foreground: 25 25% 20%;
+    --accent: 25 85% 60%;
+    --accent-foreground: 0 0% 100%;
+    --accent-light: 25 80% 70%;
+    --accent-dark: 25 90% 50%;
+    --muted: 25 20% 95%;
+    --border: 25 20% 88%;
+    --gradient-primary: linear-gradient(135deg, hsl(345 75% 50%), hsl(345 70% 60%));
+    --gradient-accent: linear-gradient(135deg, hsl(25 85% 60%), hsl(25 80% 68%));
+    --gradient-hero: linear-gradient(135deg, hsl(345 80% 40% / 0.98), hsl(345 75% 48% / 0.95), hsl(345 70% 55% / 0.92));
+  }
 }
 
 @layer base {
