@@ -317,7 +317,7 @@ const Index = () => {
             <Card className="shadow-soft overflow-hidden group cursor-pointer">
               <CardContent className="p-0">
                 <div className="aspect-square overflow-hidden">
-                  <img src={storeInterior1} alt="Textilien und Kleidung" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <img src={storeInterior1} alt="Innenansicht des Geschäfts" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                 </div>
               </CardContent>
             </Card>
@@ -346,13 +346,6 @@ const Index = () => {
               <CardContent className="p-0">
                 <div className="aspect-square overflow-hidden">
                   <img src={storeShoes} alt="Schuhe in verschiedenen Farben" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                </div>
-              </CardContent>
-            </Card>
-            <Card className="shadow-soft overflow-hidden group cursor-pointer">
-              <CardContent className="p-0">
-                <div className="aspect-square overflow-hidden">
-                  <img src={storeInterior2} alt="Bunte Textilien und Accessoires" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                 </div>
               </CardContent>
             </Card>
