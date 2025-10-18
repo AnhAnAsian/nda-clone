@@ -9,7 +9,7 @@ import heroImage from "@/assets/hero-bg.jpg";
 import textilesImage from "@/assets/textiles.jpg";
 import giftsImage from "@/assets/gifts.jpg";
 import dekoImage from "@/assets/deko.jpg";
-import parfumsImage from "@/assets/parfums.jpg";
+import taschenRucksaeckeImage from "@/assets/taschen-rucksaecke.jpg";
 import bilderTeppicheImage from "@/assets/bilder-teppiche.jpg";
 import schuheImage from "@/assets/schuhe.jpg";
 import storeFrontNew from "@/assets/store-front-new.jpg";
@@ -171,6 +171,9 @@ const Index = () => {
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               Komm vorbei und entdecke regelmäßig neue Produkte – unser Angebot wechselt stetig!
             </p>
+            <p className="text-sm text-muted-foreground/80 max-w-2xl mx-auto mt-4 italic">
+              Bitte beachten: Die gezeigten Fotos dienen als Beispiel und zeigen nicht immer die aktuell verfügbaren Artikel im Geschäft.
+            </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -237,22 +240,22 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            {/* Parfums Category */}
+            {/* Taschen & Rucksäcke Category */}
             <Card className="shadow-medium hover:shadow-elegant transition-all duration-500 overflow-hidden group bg-white border border-border/50 rounded-2xl">
               <CardContent className="p-0">
                 <div className="aspect-square overflow-hidden relative">
                   <div className="absolute inset-0 bg-gradient-to-br from-accent/0 via-accent/5 to-accent/10 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10"></div>
                   <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                   <img
-                    src={parfumsImage}
-                    alt="Parfums und tolle Düfte für jeden Geschmack"
+                    src={taschenRucksaeckeImage}
+                    alt="Taschen und Rucksäcke für jeden Anlass"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                   />
                 </div>
                 <div className="p-8">
-                  <h3 className="text-2xl font-bold text-primary mb-3 group-hover:bg-gradient-accent group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">🌸 Parfums</h3>
+                  <h3 className="text-2xl font-bold text-primary mb-3 group-hover:bg-gradient-accent group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">👜 Taschen und Rucksäcke</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Tolle Düfte für jeden Geschmack
+                    Stylische Begleiter für jeden Anlass
                   </p>
                 </div>
               </CardContent>
@@ -286,7 +289,7 @@ const Index = () => {
                   <div className="absolute inset-0 bg-gradient-to-br from-accent/0 via-accent/5 to-accent/10 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10"></div>
                   <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                   <img
-                    src={schuheImage}
+                    src={storeShoes}
                     alt="Bequeme und modische Schuhe"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                   />
