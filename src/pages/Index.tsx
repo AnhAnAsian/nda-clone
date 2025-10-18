@@ -17,22 +17,28 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/98 backdrop-blur-md border-b border-border/60 shadow-soft">
-        <div className="container mx-auto px-4 py-5">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-xl border-b border-border shadow-xs">
+        <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <h1 className="text-3xl font-bold bg-gradient-accent bg-clip-text text-transparent">NDA</h1>
+            <h1 className="text-3xl font-bold">
+              <span className="bg-gradient-primary bg-clip-text text-transparent">NDA</span>
+            </h1>
             <div className="hidden md:flex gap-8">
-              <a href="#home" className="text-foreground hover:text-primary transition-all duration-300 font-medium relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-primary after:transition-all after:duration-300">
-                Start
+              <a href="#home" className="text-foreground/70 hover:text-primary transition-all duration-300 font-medium text-sm tracking-wide uppercase relative group">
+                <span className="relative z-10">Start</span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-accent group-hover:w-full transition-all duration-300"></span>
               </a>
-              <a href="#about" className="text-foreground hover:text-primary transition-all duration-300 font-medium relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-primary after:transition-all after:duration-300">
-                Über uns
+              <a href="#about" className="text-foreground/70 hover:text-primary transition-all duration-300 font-medium text-sm tracking-wide uppercase relative group">
+                <span className="relative z-10">Über uns</span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-accent group-hover:w-full transition-all duration-300"></span>
               </a>
-              <a href="#products" className="text-foreground hover:text-primary transition-all duration-300 font-medium relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-primary after:transition-all after:duration-300">
-                Produkte
+              <a href="#products" className="text-foreground/70 hover:text-primary transition-all duration-300 font-medium text-sm tracking-wide uppercase relative group">
+                <span className="relative z-10">Produkte</span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-accent group-hover:w-full transition-all duration-300"></span>
               </a>
-              <a href="#contact" className="text-foreground hover:text-primary transition-all duration-300 font-medium relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-primary after:transition-all after:duration-300">
-                Kontakt
+              <a href="#contact" className="text-foreground/70 hover:text-primary transition-all duration-300 font-medium text-sm tracking-wide uppercase relative group">
+                <span className="relative z-10">Kontakt</span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-accent group-hover:w-full transition-all duration-300"></span>
               </a>
             </div>
           </div>
@@ -42,20 +48,27 @@ const Index = () => {
       {/* Hero Section */}
       <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
         <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${heroImage})` }}>
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/97 via-primary/90 to-primary/85" />
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/96 via-primary/92 to-primary-light/88"></div>
+          <div className="absolute inset-0 bg-gradient-primary-soft opacity-50"></div>
         </div>
 
-        <div className="relative z-10 container mx-auto px-4 py-20 text-center animate-fade-in">
-          <h2 className="text-5xl md:text-7xl lg:text-8xl font-bold text-primary-foreground mb-8 leading-tight">
-            Willkommen bei <span className="inline-block bg-gradient-accent bg-clip-text text-transparent">NDA</span>
-            <br />
-            <span className="text-4xl md:text-5xl lg:text-6xl font-light">Textilien & Geschenkartikel</span>
-          </h2>
-          <p className="text-xl md:text-2xl lg:text-3xl text-primary-foreground/95 mb-12 max-w-3xl mx-auto font-light leading-relaxed">
-            Schöne Dinge zum Verschenken, Wohlfühlen und Dekorieren – direkt hier in Gransee.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-delay">
-            <Button size="lg" variant="secondary" className="shadow-glow text-lg px-8 py-6 hover:scale-105 transition-transform duration-300">
+        <div className="relative z-10 container mx-auto px-6 py-24 text-center animate-fade-in">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-6xl md:text-7xl lg:text-8xl font-bold text-primary-foreground mb-6 leading-[1.1] tracking-tight">
+              Willkommen bei{" "}
+              <span className="relative inline-block">
+                <span className="bg-gradient-accent bg-clip-text text-transparent">NDA</span>
+              </span>
+            </h2>
+            <p className="text-2xl md:text-3xl lg:text-4xl font-light text-primary-foreground/95 mb-4">
+              Textilien & Geschenkartikel
+            </p>
+            <p className="text-xl md:text-2xl text-primary-foreground/85 mb-12 max-w-3xl mx-auto font-light leading-relaxed">
+              Schöne Dinge zum Verschenken, Wohlfühlen und Dekorieren – direkt hier in Gransee.
+            </p>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-5 justify-center animate-fade-in-delay">
+            <Button size="lg" className="bg-gradient-accent hover:opacity-90 shadow-accent text-white text-lg px-10 py-7 rounded-xl font-medium transition-all duration-300 hover:scale-105 hover:shadow-elegant border-0">
               Entdecke unsere Auswahl vor Ort!
             </Button>
           </div>
@@ -63,31 +76,37 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-24 bg-gradient-warm relative overflow-hidden">
-        <div className="absolute inset-0 opacity-30" style={{ backgroundImage: 'radial-gradient(circle at 20% 50%, hsl(15 60% 55% / 0.1) 0%, transparent 50%)' }}></div>
-        <div className="container mx-auto px-4 relative z-10">
+      <section id="about" className="py-28 relative overflow-hidden bg-gradient-warm">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-accent-soft rounded-full blur-3xl opacity-30"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-primary-soft rounded-full blur-3xl opacity-20"></div>
+        <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
-            <h2 className="text-5xl md:text-6xl font-bold text-primary mb-8">Über uns</h2>
-            <div className="flex justify-center mb-10">
-              <div className="bg-accent/10 p-4 rounded-full">
-                <Heart className="w-12 h-12 text-accent" />
+            <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-4">
+              <span className="bg-gradient-primary bg-clip-text text-transparent">Über uns</span>
+            </h2>
+            <div className="flex justify-center mb-12">
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-accent rounded-full blur-xl opacity-30"></div>
+                <div className="relative bg-gradient-accent p-5 rounded-full shadow-accent">
+                  <Heart className="w-10 h-10 text-white" />
+                </div>
               </div>
             </div>
-            <p className="text-xl text-foreground/80 leading-relaxed mb-8">
+            <p className="text-xl text-foreground/70 leading-relaxed mb-8">
               Bei NDA – Textilien & Geschenkartikel findest du alles, was dein Zuhause gemütlicher macht und was du lieben Menschen schenken kannst.
               Wir sind ein lokales Geschäft in Gransee und bieten eine abwechslungsreiche Auswahl aus Großhandelsartikeln – sorgfältig zusammengestellt und zu fairen Preisen.
             </p>
-            <p className="text-xl text-foreground/80 leading-relaxed mb-16">
+            <p className="text-xl text-foreground/70 leading-relaxed mb-16">
               Unser Sortiment reicht von Textilien über Dekoartikel und Geschenkideen bis hin zu Parfums, Bildern, Teppichen und Schuhen.
               Wir freuen uns über jeden Besuch – ob du ein besonderes Geschenk suchst oder einfach nur ein wenig stöbern möchtest.
             </p>
 
             {/* Placeholder for team/shop photo */}
-            <Card className="shadow-soft overflow-hidden">
+            <Card className="shadow-medium overflow-hidden border border-border/50 rounded-2xl bg-white">
               <CardContent className="p-0">
-                <div className="aspect-video bg-muted flex items-center justify-center">
+                <div className="aspect-video bg-gradient-warm flex items-center justify-center">
                   <div className="text-center text-muted-foreground">
-                    <Users className="w-16 h-16 mx-auto mb-4 opacity-50" />
+                    <Users className="w-16 h-16 mx-auto mb-4 opacity-40" />
                     <p className="text-sm">Hier kommt ein Foto von unserem Team oder Geschäft</p>
                   </div>
                 </div>
@@ -110,19 +129,20 @@ const Index = () => {
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Textiles Category */}
-            <Card className="shadow-soft hover:shadow-glow transition-all duration-500 overflow-hidden group bg-gradient-card border-0">
+            <Card className="shadow-medium hover:shadow-elegant transition-all duration-500 overflow-hidden group bg-white border border-border/50 rounded-2xl">
               <CardContent className="p-0">
                 <div className="aspect-square overflow-hidden relative">
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/5 to-primary/10 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10"></div>
+                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                   <img
                     src={textilesImage}
                     alt="Modische Basics und Accessoires"
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                   />
                 </div>
-                <div className="p-7">
-                  <h3 className="text-2xl font-bold text-primary mb-3 group-hover:text-accent transition-colors duration-300">🧥 Textilien</h3>
-                  <p className="text-muted-foreground mb-4 leading-relaxed">
+                <div className="p-8">
+                  <h3 className="text-2xl font-bold text-primary mb-3 group-hover:bg-gradient-primary group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">🧥 Textilien</h3>
+                  <p className="text-muted-foreground leading-relaxed">
                     Modische Basics & Accessoires für jeden Stil
                   </p>
                 </div>
@@ -130,19 +150,20 @@ const Index = () => {
             </Card>
 
             {/* Gifts Category */}
-            <Card className="shadow-soft hover:shadow-glow transition-all duration-500 overflow-hidden group bg-gradient-card border-0">
+            <Card className="shadow-medium hover:shadow-elegant transition-all duration-500 overflow-hidden group bg-white border border-border/50 rounded-2xl">
               <CardContent className="p-0">
                 <div className="aspect-square overflow-hidden relative">
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-accent/0 via-accent/5 to-accent/10 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10"></div>
+                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                   <img
                     src={giftsImage}
                     alt="Geschenkartikel und kleine Aufmerksamkeiten"
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                   />
                 </div>
-                <div className="p-7">
-                  <h3 className="text-2xl font-bold text-primary mb-3 group-hover:text-accent transition-colors duration-300">🎁 Geschenkartikel</h3>
-                  <p className="text-muted-foreground mb-4 leading-relaxed">
+                <div className="p-8">
+                  <h3 className="text-2xl font-bold text-primary mb-3 group-hover:bg-gradient-accent group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">🎁 Geschenkartikel</h3>
+                  <p className="text-muted-foreground leading-relaxed">
                     Kleine Aufmerksamkeiten für Freunde und Familie
                   </p>
                 </div>
@@ -150,19 +171,20 @@ const Index = () => {
             </Card>
 
             {/* Deko Category */}
-            <Card className="shadow-soft hover:shadow-glow transition-all duration-500 overflow-hidden group bg-gradient-card border-0">
+            <Card className="shadow-medium hover:shadow-elegant transition-all duration-500 overflow-hidden group bg-white border border-border/50 rounded-2xl">
               <CardContent className="p-0">
                 <div className="aspect-square overflow-hidden relative">
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/5 to-primary/10 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10"></div>
+                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                   <img
                     src={dekoImage}
                     alt="Dekoartikel für ein schönes Zuhause"
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                   />
                 </div>
-                <div className="p-7">
-                  <h3 className="text-2xl font-bold text-primary mb-3 group-hover:text-accent transition-colors duration-300">🕯️ Dekoartikel</h3>
-                  <p className="text-muted-foreground mb-4 leading-relaxed">
+                <div className="p-8">
+                  <h3 className="text-2xl font-bold text-primary mb-3 group-hover:bg-gradient-primary group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">🕯️ Dekoartikel</h3>
+                  <p className="text-muted-foreground leading-relaxed">
                     Für ein schönes Zuhause
                   </p>
                 </div>
@@ -170,19 +192,20 @@ const Index = () => {
             </Card>
 
             {/* Parfums Category */}
-            <Card className="shadow-soft hover:shadow-glow transition-all duration-500 overflow-hidden group bg-gradient-card border-0">
+            <Card className="shadow-medium hover:shadow-elegant transition-all duration-500 overflow-hidden group bg-white border border-border/50 rounded-2xl">
               <CardContent className="p-0">
                 <div className="aspect-square overflow-hidden relative">
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-accent/0 via-accent/5 to-accent/10 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10"></div>
+                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                   <img
                     src={parfumsImage}
                     alt="Parfums und tolle Düfte für jeden Geschmack"
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                   />
                 </div>
-                <div className="p-7">
-                  <h3 className="text-2xl font-bold text-primary mb-3 group-hover:text-accent transition-colors duration-300">🌸 Parfums</h3>
-                  <p className="text-muted-foreground mb-4 leading-relaxed">
+                <div className="p-8">
+                  <h3 className="text-2xl font-bold text-primary mb-3 group-hover:bg-gradient-accent group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">🌸 Parfums</h3>
+                  <p className="text-muted-foreground leading-relaxed">
                     Tolle Düfte für jeden Geschmack
                   </p>
                 </div>
@@ -190,19 +213,20 @@ const Index = () => {
             </Card>
 
             {/* Bilder & Teppiche Category */}
-            <Card className="shadow-soft hover:shadow-glow transition-all duration-500 overflow-hidden group bg-gradient-card border-0">
+            <Card className="shadow-medium hover:shadow-elegant transition-all duration-500 overflow-hidden group bg-white border border-border/50 rounded-2xl">
               <CardContent className="p-0">
                 <div className="aspect-square overflow-hidden relative">
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/5 to-primary/10 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10"></div>
+                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                   <img
                     src={bilderTeppicheImage}
                     alt="Bilder, Teppiche und kreative Wohnakzente"
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                   />
                 </div>
-                <div className="p-7">
-                  <h3 className="text-2xl font-bold text-primary mb-3 group-hover:text-accent transition-colors duration-300">🖼️ Bilder & Teppiche</h3>
-                  <p className="text-muted-foreground mb-4 leading-relaxed">
+                <div className="p-8">
+                  <h3 className="text-2xl font-bold text-primary mb-3 group-hover:bg-gradient-primary group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">🖼️ Bilder & Teppiche</h3>
+                  <p className="text-muted-foreground leading-relaxed">
                     Kreative Wohnakzente
                   </p>
                 </div>
@@ -210,19 +234,20 @@ const Index = () => {
             </Card>
 
             {/* Schuhe Category */}
-            <Card className="shadow-soft hover:shadow-glow transition-all duration-500 overflow-hidden group bg-gradient-card border-0">
+            <Card className="shadow-medium hover:shadow-elegant transition-all duration-500 overflow-hidden group bg-white border border-border/50 rounded-2xl">
               <CardContent className="p-0">
                 <div className="aspect-square overflow-hidden relative">
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-accent/0 via-accent/5 to-accent/10 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10"></div>
+                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                   <img
                     src={schuheImage}
                     alt="Bequeme und modische Schuhe"
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                   />
                 </div>
-                <div className="p-7">
-                  <h3 className="text-2xl font-bold text-primary mb-3 group-hover:text-accent transition-colors duration-300">👟 Schuhe</h3>
-                  <p className="text-muted-foreground mb-4 leading-relaxed">
+                <div className="p-8">
+                  <h3 className="text-2xl font-bold text-primary mb-3 group-hover:bg-gradient-accent group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">👟 Schuhe</h3>
+                  <p className="text-muted-foreground leading-relaxed">
                     Bequeme und modische Modelle
                   </p>
                 </div>

@@ -26,10 +26,13 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          light: "hsl(var(--primary-light))",
+          dark: "hsl(var(--primary-dark))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
+          dark: "hsl(var(--secondary-dark))",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
@@ -42,6 +45,8 @@ export default {
         accent: {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
+          light: "hsl(var(--accent-light))",
+          dark: "hsl(var(--accent-dark))",
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",
@@ -112,14 +117,20 @@ export default {
         "slide-up": "slideUp 0.8s ease-out forwards",
       },
       boxShadow: {
-        soft: "0 2px 20px hsl(158 30% 20% / 0.06)",
-        elegant: "0 8px 40px hsl(158 25% 15% / 0.12)",
-        glow: "0 0 40px hsl(15 60% 55% / 0.15)",
+        xs: "0 1px 2px hsl(220 15% 15% / 0.04)",
+        soft: "0 2px 8px hsl(220 15% 15% / 0.06), 0 1px 3px hsl(220 15% 15% / 0.08)",
+        medium: "0 4px 16px hsl(220 15% 15% / 0.08), 0 2px 6px hsl(220 15% 15% / 0.1)",
+        elegant: "0 8px 32px hsl(220 15% 15% / 0.12), 0 4px 12px hsl(220 15% 15% / 0.1)",
+        accent: "0 4px 20px hsl(25 65% 62% / 0.25)",
       },
       backgroundImage: {
-        'gradient-warm': 'linear-gradient(135deg, hsl(35 60% 95%), hsl(30 50% 92%))',
-        'gradient-accent': 'linear-gradient(135deg, hsl(15 60% 55%), hsl(15 55% 48%))',
-        'gradient-card': 'linear-gradient(145deg, hsl(0 0% 100%), hsl(30 30% 98%))',
+        'gradient-primary': 'var(--gradient-primary)',
+        'gradient-primary-soft': 'var(--gradient-primary-soft)',
+        'gradient-accent': 'var(--gradient-accent)',
+        'gradient-accent-soft': 'var(--gradient-accent-soft)',
+        'gradient-warm': 'var(--gradient-warm)',
+        'gradient-card': 'var(--gradient-card)',
+        'gradient-shimmer': 'var(--gradient-shimmer)',
       },
     },
   },
