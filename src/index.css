@@ -212,23 +212,30 @@ All colors MUST be HSL.
 
   /* Dark Elegant Theme */
   .theme-dark-elegant {
-    --background: 240 15% 8%;
-    --foreground: 40 30% 95%;
-    --primary: 280 50% 55%;
-    --primary-foreground: 40 30% 98%;
-    --primary-light: 280 45% 70%;
-    --primary-dark: 280 55% 40%;
-    --secondary: 240 12% 15%;
-    --secondary-foreground: 40 30% 95%;
-    --accent: 320 60% 60%;
-    --accent-foreground: 0 0% 100%;
-    --accent-light: 320 55% 70%;
-    --accent-dark: 320 65% 50%;
-    --muted: 240 12% 15%;
-    --border: 240 15% 20%;
-    --gradient-primary: linear-gradient(135deg, hsl(280 50% 55%), hsl(280 45% 65%));
-    --gradient-accent: linear-gradient(135deg, hsl(320 60% 60%), hsl(320 55% 68%));
-    --gradient-hero: linear-gradient(135deg, hsl(280 55% 40% / 0.98), hsl(280 50% 50% / 0.95), hsl(280 45% 60% / 0.92));
+    --background: 30 8% 12%;
+    --foreground: 40 20% 88%;
+    --primary: 40 15% 75%;
+    --primary-foreground: 30 8% 12%;
+    --primary-light: 40 20% 85%;
+    --primary-dark: 40 12% 65%;
+    --secondary: 30 10% 18%;
+    --secondary-foreground: 40 20% 88%;
+    --accent: 42 78% 65%;
+    --accent-foreground: 30 8% 12%;
+    --accent-light: 42 75% 75%;
+    --accent-dark: 42 82% 55%;
+    --muted: 30 10% 20%;
+    --muted-foreground: 40 15% 65%;
+    --border: 30 12% 22%;
+    --input: 30 12% 20%;
+    --ring: 42 78% 65%;
+    --gradient-primary: linear-gradient(135deg, hsl(40 15% 75%), hsl(40 20% 82%));
+    --gradient-primary-soft: linear-gradient(135deg, hsl(40 15% 75% / 0.08), hsl(40 20% 80% / 0.12));
+    --gradient-accent: linear-gradient(135deg, hsl(42 78% 65%), hsl(42 75% 72%));
+    --gradient-accent-soft: linear-gradient(135deg, hsl(42 78% 65% / 0.12), hsl(42 75% 70% / 0.08));
+    --gradient-hero: linear-gradient(135deg, hsl(30 10% 10% / 0.98), hsl(30 8% 14% / 0.95), hsl(30 10% 18% / 0.92));
+    --gradient-warm: linear-gradient(135deg, hsl(30 10% 16%), hsl(30 8% 14%));
+    --gradient-card: linear-gradient(145deg, hsl(30 10% 15%), hsl(30 8% 13%));
   }
 }
 
