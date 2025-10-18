@@ -180,7 +180,7 @@ const Index = () => {
             </p>
 
             {/* Store Front Photo */}
-            <Card className="shadow-medium overflow-hidden border border-border/50 rounded-2xl bg-white">
+            <Card className="shadow-medium overflow-hidden border border-border/50 rounded-2xl bg-card">
               <CardContent className="p-0">
                 <div className="aspect-video overflow-hidden">
                   <img
@@ -211,7 +211,7 @@ const Index = () => {
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Textiles Category */}
-            <Card className="shadow-medium hover:shadow-elegant transition-all duration-500 overflow-hidden group bg-white border border-border/50 rounded-2xl">
+            <Card className="shadow-medium hover:shadow-elegant transition-all duration-500 overflow-hidden group bg-card border border-border/50 rounded-2xl">
               <CardContent className="p-0">
                 <div className="aspect-square overflow-hidden relative">
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/5 to-primary/10 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10"></div>
@@ -232,7 +232,7 @@ const Index = () => {
             </Card>
 
             {/* Gifts Category */}
-            <Card className="shadow-medium hover:shadow-elegant transition-all duration-500 overflow-hidden group bg-white border border-border/50 rounded-2xl">
+            <Card className="shadow-medium hover:shadow-elegant transition-all duration-500 overflow-hidden group bg-card border border-border/50 rounded-2xl">
               <CardContent className="p-0">
                 <div className="aspect-square overflow-hidden relative">
                   <div className="absolute inset-0 bg-gradient-to-br from-accent/0 via-accent/5 to-accent/10 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10"></div>
@@ -253,7 +253,7 @@ const Index = () => {
             </Card>
 
             {/* Deko Category */}
-            <Card className="shadow-medium hover:shadow-elegant transition-all duration-500 overflow-hidden group bg-white border border-border/50 rounded-2xl">
+            <Card className="shadow-medium hover:shadow-elegant transition-all duration-500 overflow-hidden group bg-card border border-border/50 rounded-2xl">
               <CardContent className="p-0">
                 <div className="aspect-square overflow-hidden relative">
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/5 to-primary/10 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10"></div>
@@ -274,7 +274,7 @@ const Index = () => {
             </Card>
 
             {/* Taschen & Rucksäcke Category */}
-            <Card className="shadow-medium hover:shadow-elegant transition-all duration-500 overflow-hidden group bg-white border border-border/50 rounded-2xl">
+            <Card className="shadow-medium hover:shadow-elegant transition-all duration-500 overflow-hidden group bg-card border border-border/50 rounded-2xl">
               <CardContent className="p-0">
                 <div className="aspect-square overflow-hidden relative">
                   <div className="absolute inset-0 bg-gradient-to-br from-accent/0 via-accent/5 to-accent/10 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10"></div>
@@ -295,7 +295,7 @@ const Index = () => {
             </Card>
 
             {/* Bilder & Teppiche Category */}
-            <Card className="shadow-medium hover:shadow-elegant transition-all duration-500 overflow-hidden group bg-white border border-border/50 rounded-2xl">
+            <Card className="shadow-medium hover:shadow-elegant transition-all duration-500 overflow-hidden group bg-card border border-border/50 rounded-2xl">
               <CardContent className="p-0">
                 <div className="aspect-square overflow-hidden relative">
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/5 to-primary/10 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10"></div>
@@ -316,7 +316,7 @@ const Index = () => {
             </Card>
 
             {/* Schuhe Category */}
-            <Card className="shadow-medium hover:shadow-elegant transition-all duration-500 overflow-hidden group bg-white border border-border/50 rounded-2xl">
+            <Card className="shadow-medium hover:shadow-elegant transition-all duration-500 overflow-hidden group bg-card border border-border/50 rounded-2xl">
               <CardContent className="p-0">
                 <div className="aspect-square overflow-hidden relative">
                   <div className="absolute inset-0 bg-gradient-to-br from-accent/0 via-accent/5 to-accent/10 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10"></div>

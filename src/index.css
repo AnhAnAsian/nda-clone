@@ -214,16 +214,16 @@ All colors MUST be HSL.
   .theme-dark-elegant {
     --background: 30 8% 12%;
     --foreground: 40 25% 92%;
-    --card: 30 10% 15%;
+    --card: 30 10% 16%;
     --card-foreground: 40 25% 92%;
     --primary: 42 70% 75%;
-    --primary-foreground: 30 8% 12%;
+    --primary-foreground: 30 8% 8%;
     --primary-light: 42 68% 82%;
     --primary-dark: 42 72% 68%;
     --secondary: 30 10% 18%;
     --secondary-foreground: 40 25% 92%;
     --accent: 42 82% 68%;
-    --accent-foreground: 30 8% 12%;
+    --accent-foreground: 30 8% 8%;
     --accent-light: 42 78% 78%;
     --accent-dark: 42 85% 60%;
     --muted: 30 10% 20%;
@@ -235,7 +235,7 @@ All colors MUST be HSL.
     --gradient-primary-soft: linear-gradient(135deg, hsl(42 70% 75% / 0.08), hsl(42 68% 78% / 0.12));
     --gradient-accent: linear-gradient(135deg, hsl(42 82% 68%), hsl(42 78% 75%));
     --gradient-accent-soft: linear-gradient(135deg, hsl(42 82% 68% / 0.12), hsl(42 78% 72% / 0.08));
-    --gradient-hero: linear-gradient(135deg, hsl(30 10% 10% / 0.98), hsl(30 8% 14% / 0.95), hsl(30 10% 18% / 0.92));
+    --gradient-hero: linear-gradient(135deg, hsl(30 12% 8% / 0.95), hsl(30 10% 10% / 0.92), hsl(42 20% 18% / 0.88));
     --gradient-warm: linear-gradient(135deg, hsl(30 10% 16%), hsl(30 8% 14%));
     --gradient-card: linear-gradient(145deg, hsl(30 10% 16%), hsl(30 8% 14%));
   }
@@ -244,6 +244,7 @@ All colors MUST be HSL.
 @layer base {
   * {
     @apply border-border;
+    transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
   }
 
   body {
