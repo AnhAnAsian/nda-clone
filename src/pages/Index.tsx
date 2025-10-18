@@ -17,21 +17,21 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
-        <div className="container mx-auto px-4 py-4">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/98 backdrop-blur-md border-b border-border/60 shadow-soft">
+        <div className="container mx-auto px-4 py-5">
           <div className="flex items-center justify-between">
-            <h1 className="text-2xl font-bold text-primary">NDA</h1>
-            <div className="hidden md:flex gap-6">
-              <a href="#home" className="text-foreground hover:text-primary transition-colors">
+            <h1 className="text-3xl font-bold bg-gradient-accent bg-clip-text text-transparent">NDA</h1>
+            <div className="hidden md:flex gap-8">
+              <a href="#home" className="text-foreground hover:text-primary transition-all duration-300 font-medium relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-primary after:transition-all after:duration-300">
                 Start
               </a>
-              <a href="#about" className="text-foreground hover:text-primary transition-colors">
+              <a href="#about" className="text-foreground hover:text-primary transition-all duration-300 font-medium relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-primary after:transition-all after:duration-300">
                 Über uns
               </a>
-              <a href="#products" className="text-foreground hover:text-primary transition-colors">
+              <a href="#products" className="text-foreground hover:text-primary transition-all duration-300 font-medium relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-primary after:transition-all after:duration-300">
                 Produkte
               </a>
-              <a href="#contact" className="text-foreground hover:text-primary transition-colors">
+              <a href="#contact" className="text-foreground hover:text-primary transition-all duration-300 font-medium relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-primary after:transition-all after:duration-300">
                 Kontakt
               </a>
             </div>
@@ -42,20 +42,20 @@ const Index = () => {
       {/* Hero Section */}
       <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
         <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${heroImage})` }}>
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/95 to-primary/80" />
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/97 via-primary/90 to-primary/85" />
         </div>
 
         <div className="relative z-10 container mx-auto px-4 py-20 text-center animate-fade-in">
-          <h2 className="text-5xl md:text-7xl font-bold text-primary-foreground mb-6">
-            Willkommen bei NDA –
+          <h2 className="text-5xl md:text-7xl lg:text-8xl font-bold text-primary-foreground mb-8 leading-tight">
+            Willkommen bei <span className="inline-block bg-gradient-accent bg-clip-text text-transparent">NDA</span>
             <br />
-            Textilien & Geschenkartikel
+            <span className="text-4xl md:text-5xl lg:text-6xl font-light">Textilien & Geschenkartikel</span>
           </h2>
-          <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto font-light">
+          <p className="text-xl md:text-2xl lg:text-3xl text-primary-foreground/95 mb-12 max-w-3xl mx-auto font-light leading-relaxed">
             Schöne Dinge zum Verschenken, Wohlfühlen und Dekorieren – direkt hier in Gransee.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-delay">
-            <Button size="lg" variant="secondary" className="shadow-elegant">
+            <Button size="lg" variant="secondary" className="shadow-glow text-lg px-8 py-6 hover:scale-105 transition-transform duration-300">
               Entdecke unsere Auswahl vor Ort!
             </Button>
           </div>
@@ -63,18 +63,21 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-secondary/30">
-        <div className="container mx-auto px-4">
+      <section id="about" className="py-24 bg-gradient-warm relative overflow-hidden">
+        <div className="absolute inset-0 opacity-30" style={{ backgroundImage: 'radial-gradient(circle at 20% 50%, hsl(15 60% 55% / 0.1) 0%, transparent 50%)' }}></div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">Über uns</h2>
-            <div className="flex justify-center mb-8">
-              <Heart className="w-12 h-12 text-accent" />
+            <h2 className="text-5xl md:text-6xl font-bold text-primary mb-8">Über uns</h2>
+            <div className="flex justify-center mb-10">
+              <div className="bg-accent/10 p-4 rounded-full">
+                <Heart className="w-12 h-12 text-accent" />
+              </div>
             </div>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+            <p className="text-xl text-foreground/80 leading-relaxed mb-8">
               Bei NDA – Textilien & Geschenkartikel findest du alles, was dein Zuhause gemütlicher macht und was du lieben Menschen schenken kannst.
               Wir sind ein lokales Geschäft in Gransee und bieten eine abwechslungsreiche Auswahl aus Großhandelsartikeln – sorgfältig zusammengestellt und zu fairen Preisen.
             </p>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-12">
+            <p className="text-xl text-foreground/80 leading-relaxed mb-16">
               Unser Sortiment reicht von Textilien über Dekoartikel und Geschenkideen bis hin zu Parfums, Bildern, Teppichen und Schuhen.
               Wir freuen uns über jeden Besuch – ob du ein besonderes Geschenk suchst oder einfach nur ein wenig stöbern möchtest.
             </p>
@@ -95,29 +98,31 @@ const Index = () => {
       </section>
 
       {/* Products Section */}
-      <section id="products" className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Unsere Highlights</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+      <section id="products" className="py-24 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-20" style={{ backgroundImage: 'radial-gradient(circle at 80% 30%, hsl(158 35% 28% / 0.08) 0%, transparent 50%)' }}></div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="text-center mb-20 animate-fade-in">
+            <h2 className="text-5xl md:text-6xl font-bold text-primary mb-6">Unsere Highlights</h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               Komm vorbei und entdecke regelmäßig neue Produkte – unser Angebot wechselt stetig!
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Textiles Category */}
-            <Card className="shadow-soft hover:shadow-elegant transition-all duration-300 overflow-hidden group">
+            <Card className="shadow-soft hover:shadow-glow transition-all duration-500 overflow-hidden group bg-gradient-card border-0">
               <CardContent className="p-0">
-                <div className="aspect-square overflow-hidden">
+                <div className="aspect-square overflow-hidden relative">
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
                   <img
                     src={textilesImage}
                     alt="Modische Basics und Accessoires"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
                 </div>
-                <div className="p-6">
-                  <h3 className="text-2xl font-bold text-primary mb-3">🧥 Textilien</h3>
-                  <p className="text-muted-foreground mb-4">
+                <div className="p-7">
+                  <h3 className="text-2xl font-bold text-primary mb-3 group-hover:text-accent transition-colors duration-300">🧥 Textilien</h3>
+                  <p className="text-muted-foreground mb-4 leading-relaxed">
                     Modische Basics & Accessoires für jeden Stil
                   </p>
                 </div>
@@ -125,18 +130,19 @@ const Index = () => {
             </Card>
 
             {/* Gifts Category */}
-            <Card className="shadow-soft hover:shadow-elegant transition-all duration-300 overflow-hidden group">
+            <Card className="shadow-soft hover:shadow-glow transition-all duration-500 overflow-hidden group bg-gradient-card border-0">
               <CardContent className="p-0">
-                <div className="aspect-square overflow-hidden">
+                <div className="aspect-square overflow-hidden relative">
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
                   <img
                     src={giftsImage}
                     alt="Geschenkartikel und kleine Aufmerksamkeiten"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
                 </div>
-                <div className="p-6">
-                  <h3 className="text-2xl font-bold text-primary mb-3">🎁 Geschenkartikel</h3>
-                  <p className="text-muted-foreground mb-4">
+                <div className="p-7">
+                  <h3 className="text-2xl font-bold text-primary mb-3 group-hover:text-accent transition-colors duration-300">🎁 Geschenkartikel</h3>
+                  <p className="text-muted-foreground mb-4 leading-relaxed">
                     Kleine Aufmerksamkeiten für Freunde und Familie
                   </p>
                 </div>
@@ -144,18 +150,19 @@ const Index = () => {
             </Card>
 
             {/* Deko Category */}
-            <Card className="shadow-soft hover:shadow-elegant transition-all duration-300 overflow-hidden group">
+            <Card className="shadow-soft hover:shadow-glow transition-all duration-500 overflow-hidden group bg-gradient-card border-0">
               <CardContent className="p-0">
-                <div className="aspect-square overflow-hidden">
+                <div className="aspect-square overflow-hidden relative">
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
                   <img
                     src={dekoImage}
                     alt="Dekoartikel für ein schönes Zuhause"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
                 </div>
-                <div className="p-6">
-                  <h3 className="text-2xl font-bold text-primary mb-3">🕯️ Dekoartikel</h3>
-                  <p className="text-muted-foreground mb-4">
+                <div className="p-7">
+                  <h3 className="text-2xl font-bold text-primary mb-3 group-hover:text-accent transition-colors duration-300">🕯️ Dekoartikel</h3>
+                  <p className="text-muted-foreground mb-4 leading-relaxed">
                     Für ein schönes Zuhause
                   </p>
                 </div>
@@ -163,18 +170,19 @@ const Index = () => {
             </Card>
 
             {/* Parfums Category */}
-            <Card className="shadow-soft hover:shadow-elegant transition-all duration-300 overflow-hidden group">
+            <Card className="shadow-soft hover:shadow-glow transition-all duration-500 overflow-hidden group bg-gradient-card border-0">
               <CardContent className="p-0">
-                <div className="aspect-square overflow-hidden">
+                <div className="aspect-square overflow-hidden relative">
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
                   <img
                     src={parfumsImage}
                     alt="Parfums und tolle Düfte für jeden Geschmack"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
                 </div>
-                <div className="p-6">
-                  <h3 className="text-2xl font-bold text-primary mb-3">🌸 Parfums</h3>
-                  <p className="text-muted-foreground mb-4">
+                <div className="p-7">
+                  <h3 className="text-2xl font-bold text-primary mb-3 group-hover:text-accent transition-colors duration-300">🌸 Parfums</h3>
+                  <p className="text-muted-foreground mb-4 leading-relaxed">
                     Tolle Düfte für jeden Geschmack
                   </p>
                 </div>
@@ -182,18 +190,19 @@ const Index = () => {
             </Card>
 
             {/* Bilder & Teppiche Category */}
-            <Card className="shadow-soft hover:shadow-elegant transition-all duration-300 overflow-hidden group">
+            <Card className="shadow-soft hover:shadow-glow transition-all duration-500 overflow-hidden group bg-gradient-card border-0">
               <CardContent className="p-0">
-                <div className="aspect-square overflow-hidden">
+                <div className="aspect-square overflow-hidden relative">
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
                   <img
                     src={bilderTeppicheImage}
                     alt="Bilder, Teppiche und kreative Wohnakzente"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
                 </div>
-                <div className="p-6">
-                  <h3 className="text-2xl font-bold text-primary mb-3">🖼️ Bilder & Teppiche</h3>
-                  <p className="text-muted-foreground mb-4">
+                <div className="p-7">
+                  <h3 className="text-2xl font-bold text-primary mb-3 group-hover:text-accent transition-colors duration-300">🖼️ Bilder & Teppiche</h3>
+                  <p className="text-muted-foreground mb-4 leading-relaxed">
                     Kreative Wohnakzente
                   </p>
                 </div>
@@ -201,18 +210,19 @@ const Index = () => {
             </Card>
 
             {/* Schuhe Category */}
-            <Card className="shadow-soft hover:shadow-elegant transition-all duration-300 overflow-hidden group">
+            <Card className="shadow-soft hover:shadow-glow transition-all duration-500 overflow-hidden group bg-gradient-card border-0">
               <CardContent className="p-0">
-                <div className="aspect-square overflow-hidden">
+                <div className="aspect-square overflow-hidden relative">
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
                   <img
                     src={schuheImage}
                     alt="Bequeme und modische Schuhe"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
                 </div>
-                <div className="p-6">
-                  <h3 className="text-2xl font-bold text-primary mb-3">👟 Schuhe</h3>
-                  <p className="text-muted-foreground mb-4">
+                <div className="p-7">
+                  <h3 className="text-2xl font-bold text-primary mb-3 group-hover:text-accent transition-colors duration-300">👟 Schuhe</h3>
+                  <p className="text-muted-foreground mb-4 leading-relaxed">
                     Bequeme und modische Modelle
                   </p>
                 </div>
@@ -223,11 +233,11 @@ const Index = () => {
       </section>
 
       {/* Gallery Section */}
-      <section id="gallery" className="py-20">
+      <section id="gallery" className="py-24 bg-gradient-warm">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Galerie</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <div className="text-center mb-20 animate-fade-in">
+            <h2 className="text-5xl md:text-6xl font-bold text-primary mb-6">Galerie</h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               Ein kleiner Einblick in unser Sortiment
             </p>
           </div>
@@ -247,11 +257,12 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-secondary/30">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Kontakt</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+      <section id="contact" className="py-24 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-20" style={{ backgroundImage: 'radial-gradient(circle at 20% 70%, hsl(15 60% 55% / 0.1) 0%, transparent 50%)' }}></div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="text-center mb-20 animate-fade-in">
+            <h2 className="text-5xl md:text-6xl font-bold text-primary mb-6">Kontakt</h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               Finde uns direkt in der Innenstadt – Parkplätze sind in der Nähe vorhanden
             </p>
           </div>
@@ -259,8 +270,8 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
             {/* Contact Info */}
             <div className="space-y-8">
-              <Card className="shadow-soft">
-                <CardContent className="p-6">
+              <Card className="shadow-elegant bg-gradient-card border-0">
+                <CardContent className="p-8">
                   <h3 className="text-2xl font-bold text-primary mb-6">Kontaktinformationen</h3>
                   <div className="space-y-4">
                     <div className="flex items-start gap-3">
@@ -292,9 +303,9 @@ const Index = () => {
                 </CardContent>
               </Card>
 
-              <Card className="shadow-soft">
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-primary mb-4">Öffnungszeiten</h3>
+              <Card className="shadow-elegant bg-gradient-card border-0">
+                <CardContent className="p-8">
+                  <h3 className="text-2xl font-bold text-primary mb-6">Öffnungszeiten</h3>
                   <div className="space-y-2 text-sm">
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Montag - Freitag</span>
@@ -313,7 +324,7 @@ const Index = () => {
               </Card>
 
               {/* Google Maps */}
-              <Card className="shadow-soft overflow-hidden">
+              <Card className="shadow-elegant overflow-hidden border-0">
                 <CardContent className="p-0">
                   <div className="aspect-video">
                     <iframe 
@@ -331,9 +342,9 @@ const Index = () => {
             </div>
 
             {/* Contact Form */}
-            <Card className="shadow-soft">
-              <CardContent className="p-6">
-                <h3 className="text-2xl font-bold text-primary mb-6">Kontaktformular</h3>
+            <Card className="shadow-elegant bg-gradient-card border-0">
+              <CardContent className="p-8">
+                <h3 className="text-3xl font-bold text-primary mb-8">Kontaktformular</h3>
                 <form className="space-y-4">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium mb-2">
@@ -353,7 +364,7 @@ const Index = () => {
                     </label>
                     <Textarea id="message" placeholder="Ihre Nachricht an uns..." rows={6} />
                   </div>
-                  <Button type="submit" className="w-full shadow-elegant">
+                  <Button type="submit" className="w-full shadow-glow text-lg py-6 hover:scale-105 transition-transform duration-300">
                     Nachricht senden
                   </Button>
                 </form>

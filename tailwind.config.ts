@@ -112,8 +112,14 @@ export default {
         "slide-up": "slideUp 0.8s ease-out forwards",
       },
       boxShadow: {
-        soft: "0 4px 20px hsl(160 20% 20% / 0.08)",
-        elegant: "0 8px 30px hsl(160 20% 20% / 0.12)",
+        soft: "0 2px 20px hsl(158 30% 20% / 0.06)",
+        elegant: "0 8px 40px hsl(158 25% 15% / 0.12)",
+        glow: "0 0 40px hsl(15 60% 55% / 0.15)",
+      },
+      backgroundImage: {
+        'gradient-warm': 'linear-gradient(135deg, hsl(35 60% 95%), hsl(30 50% 92%))',
+        'gradient-accent': 'linear-gradient(135deg, hsl(15 60% 55%), hsl(15 55% 48%))',
+        'gradient-card': 'linear-gradient(145deg, hsl(0 0% 100%), hsl(30 30% 98%))',
       },
     },
   },

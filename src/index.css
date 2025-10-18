@@ -8,48 +8,53 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Warm, earthy palette for NDA */
-    --background: 36 33% 96%;
-    --foreground: 160 30% 15%;
+    /* Sophisticated warm palette for NDA */
+    --background: 30 20% 98%;
+    --foreground: 25 25% 15%;
 
-    --card: 36 50% 98%;
-    --card-foreground: 160 30% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 25 25% 15%;
 
-    --popover: 36 50% 98%;
-    --popover-foreground: 160 30% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 25 25% 15%;
 
-    /* Forest green primary */
-    --primary: 160 30% 25%;
-    --primary-foreground: 36 50% 98%;
+    /* Rich forest green primary */
+    --primary: 158 35% 28%;
+    --primary-foreground: 30 40% 98%;
+    --primary-glow: 158 40% 40%;
 
-    /* Warm beige secondary */
-    --secondary: 36 30% 85%;
-    --secondary-foreground: 160 30% 15%;
+    /* Elegant cream secondary */
+    --secondary: 35 50% 92%;
+    --secondary-foreground: 25 25% 15%;
 
-    /* Soft muted tones */
-    --muted: 36 25% 92%;
-    --muted-foreground: 160 15% 45%;
+    /* Refined muted tones */
+    --muted: 30 15% 94%;
+    --muted-foreground: 25 15% 40%;
 
-    /* Terracotta accent */
-    --accent: 12 45% 60%;
-    --accent-foreground: 36 50% 98%;
+    /* Warm terracotta accent */
+    --accent: 15 60% 55%;
+    --accent-foreground: 30 40% 98%;
+    --accent-light: 15 50% 65%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 36 50% 98%;
+    --destructive-foreground: 30 40% 98%;
 
-    --border: 36 20% 88%;
-    --input: 36 20% 88%;
-    --ring: 160 30% 25%;
+    --border: 30 15% 90%;
+    --input: 30 15% 92%;
+    --ring: 158 35% 28%;
 
-    --radius: 0.75rem;
+    --radius: 0.875rem;
     
-    /* Custom gradients */
-    --gradient-warm: linear-gradient(135deg, hsl(36 40% 90%), hsl(36 30% 85%));
-    --gradient-hero: linear-gradient(135deg, hsl(160 30% 25% / 0.95), hsl(160 25% 30% / 0.9));
+    /* Beautiful gradients */
+    --gradient-warm: linear-gradient(135deg, hsl(35 60% 95%), hsl(30 50% 92%));
+    --gradient-hero: linear-gradient(135deg, hsl(158 35% 28% / 0.97), hsl(158 30% 22% / 0.93));
+    --gradient-accent: linear-gradient(135deg, hsl(15 60% 55%), hsl(15 55% 48%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(30 30% 98%));
     
-    /* Shadows */
-    --shadow-soft: 0 4px 20px hsl(160 20% 20% / 0.08);
-    --shadow-elegant: 0 8px 30px hsl(160 20% 20% / 0.12);
+    /* Elegant shadows */
+    --shadow-soft: 0 2px 20px hsl(158 30% 20% / 0.06);
+    --shadow-elegant: 0 8px 40px hsl(158 25% 15% / 0.12);
+    --shadow-glow: 0 0 40px hsl(15 60% 55% / 0.15);
 
     --sidebar-background: 0 0% 98%;
 
@@ -117,22 +122,29 @@ All colors MUST be HSL.
 
 @layer utilities {
   .animate-fade-in {
-    animation: fadeIn 0.8s ease-out forwards;
+    animation: fadeIn 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   }
   
   .animate-fade-in-delay {
-    animation: fadeIn 0.8s ease-out 0.2s forwards;
+    animation: fadeIn 1s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
     opacity: 0;
   }
   
   .animate-slide-up {
-    animation: slideUp 0.8s ease-out forwards;
+    animation: slideUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+  
+  .gradient-text {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
   
   @keyframes fadeIn {
     from {
       opacity: 0;
-      transform: translateY(20px);
+      transform: translateY(30px);
     }
     to {
       opacity: 1;
@@ -143,11 +155,20 @@ All colors MUST be HSL.
   @keyframes slideUp {
     from {
       opacity: 0;
-      transform: translateY(40px);
+      transform: translateY(50px);
     }
     to {
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+  
+  @keyframes shimmer {
+    0% {
+      background-position: -200% center;
+    }
+    100% {
+      background-position: 200% center;
     }
   }
 }
