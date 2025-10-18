@@ -6,13 +6,12 @@ import { Textarea } from "@/components/ui/textarea";
 import { Heart, Users, Mail, Phone, MapPin } from "lucide-react";
 import { useState } from "react";
 import heroImage from "@/assets/hero-bg.jpg";
-import textilesImage from "@/assets/textiles.jpg";
-import giftsImage from "@/assets/gifts.jpg";
-import customPrintingImage from "@/assets/custom-printing.jpg";
-import dekoImage from "@/assets/deko.jpg";
-import parfumsImage from "@/assets/parfums.jpg";
-import bilderTeppicheImage from "@/assets/bilder-teppiche.jpg";
-import schuheImage from "@/assets/schuhe.jpg";
+import storeFront from "@/assets/store-front.jpg";
+import storeInterior1 from "@/assets/store-interior-1.jpg";
+import storeInterior2 from "@/assets/store-interior-2.jpg";
+import storeBags from "@/assets/store-bags.jpg";
+import storeClothing from "@/assets/store-clothing.jpg";
+import storeShoes from "@/assets/store-shoes.jpg";
 
 const Index = () => {
   const [isHeartAnimating, setIsHeartAnimating] = useState(false);
@@ -141,14 +140,15 @@ const Index = () => {
               Wir freuen uns über jeden Besuch – ob du ein besonderes Geschenk suchst oder einfach nur ein wenig stöbern möchtest.
             </p>
 
-            {/* Placeholder for team/shop photo */}
+            {/* Store Front Photo */}
             <Card className="shadow-medium overflow-hidden border border-border/50 rounded-2xl bg-white">
               <CardContent className="p-0">
-                <div className="aspect-video bg-gradient-warm flex items-center justify-center">
-                  <div className="text-center text-muted-foreground">
-                    <Users className="w-16 h-16 mx-auto mb-4 opacity-40" />
-                    <p className="text-sm">Hier kommt ein Foto von unserem Team oder Geschäft</p>
-                  </div>
+                <div className="aspect-video overflow-hidden">
+                  <img
+                    src={storeFront}
+                    alt="NDA Geschäft in Gransee"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </CardContent>
             </Card>
@@ -175,7 +175,7 @@ const Index = () => {
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/5 to-primary/10 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10"></div>
                   <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                   <img
-                    src={textilesImage}
+                    src={storeClothing}
                     alt="Modische Basics und Accessoires"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                   />
@@ -196,7 +196,7 @@ const Index = () => {
                   <div className="absolute inset-0 bg-gradient-to-br from-accent/0 via-accent/5 to-accent/10 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10"></div>
                   <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                   <img
-                    src={giftsImage}
+                    src={storeBags}
                     alt="Geschenkartikel und kleine Aufmerksamkeiten"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                   />
@@ -217,7 +217,7 @@ const Index = () => {
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/5 to-primary/10 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10"></div>
                   <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                   <img
-                    src={dekoImage}
+                    src={storeInterior2}
                     alt="Dekoartikel für ein schönes Zuhause"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                   />
@@ -238,7 +238,7 @@ const Index = () => {
                   <div className="absolute inset-0 bg-gradient-to-br from-accent/0 via-accent/5 to-accent/10 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10"></div>
                   <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                   <img
-                    src={parfumsImage}
+                    src={storeInterior1}
                     alt="Parfums und tolle Düfte für jeden Geschmack"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                   />
@@ -259,7 +259,7 @@ const Index = () => {
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/5 to-primary/10 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10"></div>
                   <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                   <img
-                    src={bilderTeppicheImage}
+                    src={storeInterior1}
                     alt="Bilder, Teppiche und kreative Wohnakzente"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                   />
@@ -280,7 +280,7 @@ const Index = () => {
                   <div className="absolute inset-0 bg-gradient-to-br from-accent/0 via-accent/5 to-accent/10 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10"></div>
                   <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                   <img
-                    src={schuheImage}
+                    src={storeShoes}
                     alt="Bequeme und modische Schuhe"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                   />
@@ -308,15 +308,62 @@ const Index = () => {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
-            {[1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
-              <Card key={item} className="shadow-soft overflow-hidden group cursor-pointer">
-                <CardContent className="p-0">
-                  <div className="aspect-square bg-muted flex items-center justify-center group-hover:bg-muted/80 transition-colors">
-                    <p className="text-sm text-muted-foreground">Foto {item}</p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+            <Card className="shadow-soft overflow-hidden group cursor-pointer">
+              <CardContent className="p-0">
+                <div className="aspect-square overflow-hidden">
+                  <img src={storeFront} alt="NDA Geschäft Außenansicht" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="shadow-soft overflow-hidden group cursor-pointer">
+              <CardContent className="p-0">
+                <div className="aspect-square overflow-hidden">
+                  <img src={storeInterior1} alt="Textilien und Kleidung" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="shadow-soft overflow-hidden group cursor-pointer">
+              <CardContent className="p-0">
+                <div className="aspect-square overflow-hidden">
+                  <img src={storeInterior2} alt="Textilien in vielen Farben" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="shadow-soft overflow-hidden group cursor-pointer">
+              <CardContent className="p-0">
+                <div className="aspect-square overflow-hidden">
+                  <img src={storeBags} alt="Taschen und Accessoires" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="shadow-soft overflow-hidden group cursor-pointer">
+              <CardContent className="p-0">
+                <div className="aspect-square overflow-hidden">
+                  <img src={storeClothing} alt="Kleidung im Geschäft" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="shadow-soft overflow-hidden group cursor-pointer">
+              <CardContent className="p-0">
+                <div className="aspect-square overflow-hidden">
+                  <img src={storeShoes} alt="Schuhe in verschiedenen Farben" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="shadow-soft overflow-hidden group cursor-pointer">
+              <CardContent className="p-0">
+                <div className="aspect-square overflow-hidden">
+                  <img src={storeInterior1} alt="Geschäft Innenansicht" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="shadow-soft overflow-hidden group cursor-pointer">
+              <CardContent className="p-0">
+                <div className="aspect-square overflow-hidden">
+                  <img src={storeInterior2} alt="Bunte Textilien" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
