@@ -217,13 +217,13 @@ All colors MUST be HSL.
     --card: 30 10% 16%;
     --card-foreground: 40 25% 92%;
     --primary: 42 70% 75%;
-    --primary-foreground: 30 8% 8%;
+    --primary-foreground: 42 90% 95%;
     --primary-light: 42 68% 82%;
     --primary-dark: 42 72% 68%;
     --secondary: 30 10% 18%;
     --secondary-foreground: 40 25% 92%;
     --accent: 42 82% 68%;
-    --accent-foreground: 30 8% 8%;
+    --accent-foreground: 42 90% 98%;
     --accent-light: 42 78% 78%;
     --accent-dark: 42 85% 60%;
     --muted: 30 10% 20%;
@@ -235,7 +235,7 @@ All colors MUST be HSL.
     --gradient-primary-soft: linear-gradient(135deg, hsl(42 70% 75% / 0.08), hsl(42 68% 78% / 0.12));
     --gradient-accent: linear-gradient(135deg, hsl(42 82% 68%), hsl(42 78% 75%));
     --gradient-accent-soft: linear-gradient(135deg, hsl(42 82% 68% / 0.12), hsl(42 78% 72% / 0.08));
-    --gradient-hero: linear-gradient(135deg, hsl(30 12% 8% / 0.95), hsl(30 10% 10% / 0.92), hsl(42 20% 18% / 0.88));
+    --gradient-hero: linear-gradient(135deg, hsl(30 15% 6% / 0.92), hsl(30 12% 8% / 0.88), hsl(35 18% 12% / 0.85));
     --gradient-warm: linear-gradient(135deg, hsl(30 10% 16%), hsl(30 8% 14%));
     --gradient-card: linear-gradient(145deg, hsl(30 10% 16%), hsl(30 8% 14%));
   }
@@ -244,7 +244,7 @@ All colors MUST be HSL.
 @layer base {
   * {
     @apply border-border;
-    transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
+    transition: background-color 0.8s ease-in-out, color 0.8s ease-in-out, border-color 0.8s ease-in-out;
   }
 
   body {
