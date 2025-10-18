@@ -123,8 +123,8 @@ const Index = () => {
                   className="relative bg-gradient-accent p-5 rounded-full shadow-accent cursor-pointer transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-accent/50 focus:ring-offset-2"
                 >
                   <Heart 
-                    className={`w-10 h-10 text-white transition-all duration-500 ${
-                      isHeartAnimating ? 'animate-heart-beat fill-white scale-125' : ''
+                    className={`w-10 h-10 text-accent-foreground transition-all duration-500 ${
+                      isHeartAnimating ? 'animate-heart-beat fill-accent-foreground scale-125' : ''
                     }`}
                   />
                   
