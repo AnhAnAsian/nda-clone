@@ -147,7 +147,7 @@ const Index = () => {
                   <img
                     src={storeFront}
                     alt="NDA Geschäft in Gransee"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-top"
                   />
                 </div>
               </CardContent>
@@ -307,14 +307,7 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
-            <Card className="shadow-soft overflow-hidden group cursor-pointer">
-              <CardContent className="p-0">
-                <div className="aspect-square overflow-hidden">
-                  <img src={storeFront} alt="NDA Geschäft Außenansicht" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                </div>
-              </CardContent>
-            </Card>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-6xl mx-auto">
             <Card className="shadow-soft overflow-hidden group cursor-pointer">
               <CardContent className="p-0">
                 <div className="aspect-square overflow-hidden">
@@ -353,14 +346,7 @@ const Index = () => {
             <Card className="shadow-soft overflow-hidden group cursor-pointer">
               <CardContent className="p-0">
                 <div className="aspect-square overflow-hidden">
-                  <img src={storeInterior1} alt="Geschäft Innenansicht" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                </div>
-              </CardContent>
-            </Card>
-            <Card className="shadow-soft overflow-hidden group cursor-pointer">
-              <CardContent className="p-0">
-                <div className="aspect-square overflow-hidden">
-                  <img src={storeInterior2} alt="Bunte Textilien" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <img src={storeInterior2} alt="Bunte Textilien und Accessoires" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                 </div>
               </CardContent>
             </Card>
