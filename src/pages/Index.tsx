@@ -12,7 +12,6 @@ import dekoImage from "@/assets/deko.jpg";
 import parfumsImage from "@/assets/parfums.jpg";
 import bilderTeppicheImage from "@/assets/bilder-teppiche.jpg";
 import schuheImage from "@/assets/schuhe.jpg";
-import storeFront from "@/assets/store-front.jpg";
 import storeFrontNew from "@/assets/store-front-new.jpg";
 import storeInterior1 from "@/assets/store-interior-1.jpg";
 import storeInterior2 from "@/assets/store-interior-2.jpg";
@@ -152,7 +151,7 @@ const Index = () => {
               <CardContent className="p-0">
                 <div className="aspect-video overflow-hidden">
                   <img
-                    src={storeFront}
+                    src={storeFrontNew}
                     alt="NDA Geschäft in Gransee"
                     className="w-full h-full object-cover object-top"
                   />
@@ -318,7 +317,7 @@ const Index = () => {
             <Card className="shadow-soft overflow-hidden group cursor-pointer">
               <CardContent className="p-0">
                 <div className="aspect-square overflow-hidden">
-                  <img src={storeFrontNew} alt="NDA Geschäft Außenansicht" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <img src={storeInterior1} alt="Innenansicht des Geschäfts" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                 </div>
               </CardContent>
             </Card>
