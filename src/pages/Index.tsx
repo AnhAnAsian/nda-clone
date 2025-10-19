@@ -128,9 +128,11 @@ const Index = () => {
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-5 justify-center animate-fade-in-delay">
-            <Button size="lg" className="bg-gradient-accent hover:opacity-90 shadow-accent text-white text-lg px-10 py-7 rounded-xl font-medium transition-all duration-300 hover:scale-105 hover:shadow-elegant border-0">
-              Entdecke unsere Auswahl vor Ort!
-            </Button>
+            <a href="https://www.google.com/maps/search/?api=1&query=Rudolf-Breitscheid-Str.+65,+16775+Gransee" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" className="bg-gradient-accent hover:opacity-90 shadow-accent text-white text-lg px-10 py-7 rounded-xl font-medium transition-all duration-300 hover:scale-105 hover:shadow-elegant border-0">
+                Entdecke unsere Auswahl vor Ort!
+              </Button>
+            </a>
           </div>
         </div>
       </section>
