@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Heart, Users, Mail, Phone, MapPin } from "lucide-react";
 import { useState, useEffect } from "react";
 
@@ -20,15 +21,9 @@ import storeBags from "@/assets/store-bags.jpg";
 import storeClothing from "@/assets/store-clothing.jpg";
 import storeShoes from "@/assets/store-shoes.jpg";
 
-const themes = [
-  { name: "Midnight Gold", class: "theme-midnight" },
-  { name: "Dark Elegant", class: "theme-dark-elegant" },
-];
-
 const Index = () => {
   const [isHeartAnimating, setIsHeartAnimating] = useState(false);
   const [particles, setParticles] = useState<Array<{ id: number; x: number; y: number }>>([]);
-  const [currentTheme, setCurrentTheme] = useState(0);
 
   // Apply default theme on mount
   useEffect(() => {
@@ -47,23 +42,6 @@ const Index = () => {
     }));
     
     setParticles(newParticles);
-    
-    // Change theme
-    const root = document.documentElement;
-    const currentClass = themes[currentTheme].class;
-    
-    if (currentClass) {
-      root.classList.remove(currentClass);
-    }
-
-    const nextTheme = (currentTheme + 1) % themes.length;
-    const nextClass = themes[nextTheme].class;
-    
-    if (nextClass) {
-      root.classList.add(nextClass);
-    }
-
-    setCurrentTheme(nextTheme);
     
     setTimeout(() => {
       setIsHeartAnimating(false);
@@ -127,11 +105,40 @@ const Index = () => {
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-5 justify-center animate-fade-in-delay">
-            <a href="https://www.google.com/maps/search/?api=1&query=Rudolf-Breitscheid-Str.+65,+16775+Gransee" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="bg-gradient-accent hover:opacity-90 shadow-accent text-white text-lg px-10 py-7 rounded-xl font-medium transition-all duration-300 hover:scale-105 hover:shadow-elegant border-0">
-                Entdecke unsere Auswahl vor Ort!
-              </Button>
-            </a>
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button size="lg" className="bg-gradient-accent hover:opacity-90 shadow-accent text-white text-lg px-10 py-7 rounded-xl font-medium transition-all duration-300 hover:scale-105 hover:shadow-elegant border-0">
+                  Entdecke unsere Auswahl vor Ort!
+                </Button>
+              </DialogTrigger>
+              <DialogContent className="max-w-2xl">
+                <DialogHeader>
+                  <DialogTitle className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">Besuche uns</DialogTitle>
+                </DialogHeader>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3 p-4 bg-muted/50 rounded-lg">
+                    <MapPin className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <p className="font-semibold text-lg">NDA – Textilien & Geschenkartikel</p>
+                      <p className="text-muted-foreground">Rudolf-Breitscheid-Str. 65</p>
+                      <p className="text-muted-foreground">16775 Gransee</p>
+                    </div>
+                  </div>
+                  <div className="w-full h-[300px] rounded-lg overflow-hidden border border-border">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2412.5!2d13.177!3d53.007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a9c8a5a5a5a5a5%3A0x5a5a5a5a5a5a5a5a!2sRudolf-Breitscheid-Str.%2065%2C%2016775%20Gransee!5e0!3m2!1sde!2sde!4v1234567890"
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      title="Google Maps - NDA Geschäft"
+                    />
+                  </div>
+                </div>
+              </DialogContent>
+            </Dialog>
           </div>
         </div>
       </section>
