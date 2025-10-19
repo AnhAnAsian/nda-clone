@@ -516,34 +516,34 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-primary text-primary-foreground py-16 md:py-20">
-        <div className="container mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-12 md:gap-16 mb-12">
+      <footer className="bg-primary text-primary-foreground py-12">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div>
-              <h3 className="text-2xl font-bold mb-6">NDA – Textilien & Geschenkartikel</h3>
-              <p className="text-primary-foreground/80 text-base leading-relaxed">
+              <h3 className="text-xl font-bold mb-4">NDA – Textilien & Geschenkartikel</h3>
+              <p className="text-primary-foreground/80 text-sm">
                 Lokales Einkaufen macht Freude – wir freuen uns auf deinen Besuch bei NDA in Gransee!
               </p>
             </div>
             <div>
-              <h4 className="text-lg font-semibold mb-6">Rechtliches</h4>
-              <div className="space-y-3">
+              <h4 className="font-semibold mb-4">Rechtliches</h4>
+              <div className="space-y-2 text-sm">
                 <Link
                   to="/impressum"
-                  className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors text-base"
+                  className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                 >
                   Impressum
                 </Link>
                 <Link
                   to="/datenschutz"
-                  className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors text-base"
+                  className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                 >
                   Datenschutz
                 </Link>
               </div>
             </div>
           </div>
-          <div className="border-t border-primary-foreground/20 pt-10 text-center text-primary-foreground/60">
+          <div className="border-t border-primary-foreground/20 pt-8 text-center text-sm text-primary-foreground/60">
             <p>© {new Date().getFullYear()} NDA – Textilien & Geschenkartikel. Alle Rechte vorbehalten.</p>
           </div>
         </div>
