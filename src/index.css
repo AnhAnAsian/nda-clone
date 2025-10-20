@@ -49,13 +49,13 @@ All colors MUST be HSL.
     --radius: 1rem;
     
     /* Premium gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
-    --gradient-primary-soft: linear-gradient(135deg, hsl(var(--primary-light) / 0.08), hsl(var(--primary-light) / 0.12));
-    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--accent-light)));
-    --gradient-accent-soft: linear-gradient(135deg, hsl(var(--accent) / 0.12), hsl(var(--accent-light) / 0.08));
-    --gradient-warm: linear-gradient(135deg, hsl(var(--background)), hsl(var(--secondary)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary-dark) / 0.98), hsl(var(--primary) / 0.95), hsl(var(--primary-light) / 0.92));
-    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(var(--secondary)));
+    --gradient-primary: linear-gradient(135deg, hsl(165 40% 30%), hsl(165 35% 38%));
+    --gradient-primary-soft: linear-gradient(135deg, hsl(165 35% 45% / 0.08), hsl(165 30% 50% / 0.12));
+    --gradient-accent: linear-gradient(135deg, hsl(25 65% 62%), hsl(25 60% 68%));
+    --gradient-accent-soft: linear-gradient(135deg, hsl(25 65% 62% / 0.12), hsl(25 60% 70% / 0.08));
+    --gradient-warm: linear-gradient(135deg, hsl(40 50% 98%), hsl(40 40% 96%));
+    --gradient-hero: linear-gradient(135deg, hsl(165 45% 22% / 0.98), hsl(165 40% 28% / 0.95), hsl(165 35% 35% / 0.92));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(40 30% 98%));
     --gradient-shimmer: linear-gradient(90deg, transparent, hsl(0 0% 100% / 0.3), transparent);
     
     /* Refined shadows */
@@ -73,8 +73,6 @@ All colors MUST be HSL.
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
-    
-    transition: background-color 0.8s ease-in-out, color 0.8s ease-in-out;
   }
 
   .dark {
@@ -123,9 +121,9 @@ All colors MUST be HSL.
     --accent-dark: 15 90% 55%;
     --muted: 200 20% 95%;
     --border: 200 20% 88%;
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
-    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--accent-light)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary-dark) / 0.98), hsl(var(--primary) / 0.95), hsl(var(--primary-light) / 0.92));
+    --gradient-primary: linear-gradient(135deg, hsl(200 80% 40%), hsl(200 70% 50%));
+    --gradient-accent: linear-gradient(135deg, hsl(15 85% 65%), hsl(15 80% 72%));
+    --gradient-hero: linear-gradient(135deg, hsl(200 85% 30% / 0.98), hsl(200 80% 38% / 0.95), hsl(200 75% 45% / 0.92));
   }
 
   /* Royal Purple Theme */
@@ -144,9 +142,9 @@ All colors MUST be HSL.
     --accent-dark: 45 95% 50%;
     --muted: 270 20% 95%;
     --border: 270 20% 88%;
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
-    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--accent-light)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary-dark) / 0.98), hsl(var(--primary) / 0.95), hsl(var(--primary-light) / 0.92));
+    --gradient-primary: linear-gradient(135deg, hsl(270 60% 45%), hsl(270 55% 55%));
+    --gradient-accent: linear-gradient(135deg, hsl(45 90% 60%), hsl(45 85% 68%));
+    --gradient-hero: linear-gradient(135deg, hsl(270 65% 35% / 0.98), hsl(270 60% 42% / 0.95), hsl(270 55% 50% / 0.92));
   }
 
   /* Burgundy Luxe Theme */
@@ -165,9 +163,9 @@ All colors MUST be HSL.
     --accent-dark: 40 75% 60%;
     --muted: 350 20% 95%;
     --border: 350 20% 88%;
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
-    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--accent-light)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary-dark) / 0.98), hsl(var(--primary) / 0.95), hsl(var(--primary-light) / 0.92));
+    --gradient-primary: linear-gradient(135deg, hsl(350 60% 40%), hsl(350 55% 48%));
+    --gradient-accent: linear-gradient(135deg, hsl(40 70% 70%), hsl(40 65% 78%));
+    --gradient-hero: linear-gradient(135deg, hsl(350 65% 30% / 0.98), hsl(350 60% 38% / 0.95), hsl(350 55% 45% / 0.92));
   }
 
   /* Midnight Gold Theme */
@@ -186,9 +184,9 @@ All colors MUST be HSL.
     --accent-dark: 40 90% 45%;
     --muted: 220 20% 95%;
     --border: 220 20% 88%;
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
-    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--accent-light)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary-dark) / 0.98), hsl(var(--primary) / 0.95), hsl(var(--primary-light) / 0.92));
+    --gradient-primary: linear-gradient(135deg, hsl(220 50% 35%), hsl(220 45% 45%));
+    --gradient-accent: linear-gradient(135deg, hsl(40 85% 55%), hsl(40 80% 63%));
+    --gradient-hero: linear-gradient(135deg, hsl(220 55% 25% / 0.98), hsl(220 50% 33% / 0.95), hsl(220 45% 40% / 0.92));
   }
 
   /* Sunset Coral Theme */
@@ -207,47 +205,13 @@ All colors MUST be HSL.
     --accent-dark: 25 90% 50%;
     --muted: 25 20% 95%;
     --border: 25 20% 88%;
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
-    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--accent-light)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary-dark) / 0.98), hsl(var(--primary) / 0.95), hsl(var(--primary-light) / 0.92));
-  }
-
-  /* Dark Elegant Theme */
-  .theme-dark-elegant {
-    --background: 30 8% 12%;
-    --foreground: 40 25% 92%;
-    --card: 30 10% 16%;
-    --card-foreground: 40 25% 92%;
-    --primary: 42 70% 75%;
-    --primary-foreground: 42 90% 95%;
-    --primary-light: 42 68% 82%;
-    --primary-dark: 42 72% 68%;
-    --secondary: 30 10% 18%;
-    --secondary-foreground: 40 25% 92%;
-    --accent: 42 82% 68%;
-    --accent-foreground: 42 90% 98%;
-    --accent-light: 42 78% 78%;
-    --accent-dark: 42 85% 60%;
-    --muted: 30 10% 20%;
-    --muted-foreground: 40 20% 75%;
-    --border: 30 12% 25%;
-    --input: 30 12% 20%;
-    --ring: 42 82% 68%;
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
-    --gradient-primary-soft: linear-gradient(135deg, hsl(var(--primary-light) / 0.08), hsl(var(--primary-light) / 0.12));
-    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--accent-light)));
-    --gradient-accent-soft: linear-gradient(135deg, hsl(var(--accent) / 0.12), hsl(var(--accent-light) / 0.08));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary-dark) / 0.98), hsl(var(--primary) / 0.95), hsl(var(--primary-light) / 0.92));
-    --gradient-warm: linear-gradient(135deg, hsl(var(--background)), hsl(var(--secondary)));
-    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(var(--secondary)));
+    --gradient-primary: linear-gradient(135deg, hsl(345 75% 50%), hsl(345 70% 60%));
+    --gradient-accent: linear-gradient(135deg, hsl(25 85% 60%), hsl(25 80% 68%));
+    --gradient-hero: linear-gradient(135deg, hsl(345 80% 40% / 0.98), hsl(345 75% 48% / 0.95), hsl(345 70% 55% / 0.92));
   }
 }
 
 @layer base {
-  :root, html {
-    transition: background-color 0.8s ease-in-out, color 0.8s ease-in-out;
-  }
-
   * {
     @apply border-border;
   }
@@ -255,21 +219,11 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground font-sans antialiased;
     font-family: 'Poppins', sans-serif;
-    transition: background-color 0.8s ease-in-out, color 0.8s ease-in-out;
   }
   
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    transition: color 0.8s ease-in-out;
-  }
-
-  section, nav, div, button, a, p, span {
-    transition: background-color 0.8s ease-in-out, color 0.8s ease-in-out, border-color 0.8s ease-in-out, fill 0.8s ease-in-out, stroke 0.8s ease-in-out;
-  }
-
-  svg {
-    transition: fill 0.8s ease-in-out, stroke 0.8s ease-in-out, color 0.8s ease-in-out;
   }
 }
 
