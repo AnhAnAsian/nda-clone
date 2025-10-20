@@ -427,13 +427,6 @@ const Index = () => {
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
-                      <Phone className="w-5 h-5 text-accent mt-1" />
-                      <div>
-                        <p className="font-semibold">Telefon</p>
-                        <p className="text-muted-foreground text-sm">[Ihre Telefonnummer]</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3">
                       <Mail className="w-5 h-5 text-accent mt-1" />
                       <div>
                         <p className="font-semibold">E-Mail</p>
@@ -543,8 +536,8 @@ const Index = () => {
               </div>
             </div>
           </div>
-          <div className="border-t border-primary-foreground/20 pt-8 text-center text-sm text-primary-foreground/60">
-            <p>© {new Date().getFullYear()} NDA – Textilien & Geschenkartikel. Alle Rechte vorbehalten.</p>
+          <div className="border-t border-primary-foreground/20 pt-8">
+            <p className="text-center text-sm text-primary-foreground/60">© {new Date().getFullYear()} NDA – Textilien & Geschenkartikel. Alle Rechte vorbehalten.</p>
           </div>
         </div>
       </footer>
