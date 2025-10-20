@@ -532,7 +532,9 @@ const Index = () => {
             </div>
           </div>
           <div className="border-t border-primary-foreground/20 pt-8">
-            <p className="text-center text-sm text-primary-foreground/60">© {new Date().getFullYear()} NDA – Textilien & Geschenkartikel. Alle Rechte vorbehalten.</p>
+            <div className="max-w-6xl mx-auto">
+              <p className="text-center text-sm text-primary-foreground/60">© {new Date().getFullYear()} NDA – Textilien & Geschenkartikel. Alle Rechte vorbehalten.</p>
+            </div>
           </div>
         </div>
       </footer>
