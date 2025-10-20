@@ -3,9 +3,9 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Heart, Users, Mail, Phone, MapPin } from "lucide-react";
+import { Heart, Users, Mail, MapPin } from "lucide-react";
 import { useState } from "react";
-import { ThemeSwitcher } from "@/components/ThemeSwitcher";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import heroImage from "@/assets/hero-bg.jpg";
 import textilesImage from "@/assets/textiles.jpg";
 import giftsImage from "@/assets/gifts.jpg";
@@ -51,7 +51,6 @@ const Index = () => {
             <h1 className="text-3xl font-bold">
               <span className="bg-gradient-primary bg-clip-text text-transparent">NDA</span>
             </h1>
-            <div className="flex items-center gap-6">
               <div className="hidden md:flex gap-8">
                 <a href="#home" className="text-foreground/70 hover:text-primary transition-all duration-300 font-medium text-sm tracking-wide uppercase relative group">
                   <span className="relative z-10">Start</span>
@@ -70,8 +69,6 @@ const Index = () => {
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-accent group-hover:w-full transition-all duration-300"></span>
                 </a>
               </div>
-              <ThemeSwitcher />
-            </div>
           </div>
         </div>
       </nav>
@@ -99,9 +96,29 @@ const Index = () => {
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-5 justify-center animate-fade-in-delay">
-            <Button size="lg" className="bg-gradient-accent hover:opacity-90 shadow-accent text-white text-lg px-10 py-7 rounded-xl font-medium transition-all duration-300 hover:scale-105 hover:shadow-elegant border-0">
-              Entdecke unsere Auswahl vor Ort!
-            </Button>
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button size="lg" className="bg-gradient-accent hover:opacity-90 shadow-accent text-white text-lg px-10 py-7 rounded-xl font-medium transition-all duration-300 hover:scale-105 hover:shadow-elegant border-0">
+                  Entdecke unsere Auswahl vor Ort!
+                </Button>
+              </DialogTrigger>
+              <DialogContent className="max-w-4xl w-full">
+                <DialogHeader>
+                  <DialogTitle>Besuche uns in Gransee</DialogTitle>
+                </DialogHeader>
+                <div className="aspect-video w-full">
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d300.09419646248574!2d13.1570846!3d53.0068152!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a90d53305568c1%3A0x468ff83af563f7ab!2sNda-kaufhaus!5e0!3m2!1sen!2sde!4v1760735113586!5m2!1sen!2sde" 
+                    className="w-full h-full rounded-lg"
+                    style={{ border: 0 }} 
+                    allowFullScreen 
+                    loading="lazy" 
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="NDA Standort auf Google Maps"
+                  />
+                </div>
+              </DialogContent>
+            </Dialog>
           </div>
         </div>
       </section>
@@ -390,13 +407,6 @@ const Index = () => {
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
-                      <Phone className="w-5 h-5 text-accent mt-1" />
-                      <div>
-                        <p className="font-semibold">Telefon</p>
-                        <p className="text-muted-foreground text-sm">[Ihre Telefonnummer]</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3">
                       <Mail className="w-5 h-5 text-accent mt-1" />
                       <div>
                         <p className="font-semibold">E-Mail</p>
@@ -506,8 +516,10 @@ const Index = () => {
               </div>
             </div>
           </div>
-          <div className="border-t border-primary-foreground/20 pt-8 text-center text-sm text-primary-foreground/60">
-            <p>© {new Date().getFullYear()} NDA – Textilien & Geschenkartikel. Alle Rechte vorbehalten.</p>
+          <div className="border-t border-primary-foreground/20 pt-8">
+            <div className="max-w-6xl mx-auto text-center text-sm text-primary-foreground/60">
+              <p>© {new Date().getFullYear()} NDA – Textilien & Geschenkartikel. Alle Rechte vorbehalten.</p>
+            </div>
           </div>
         </div>
       </footer>
