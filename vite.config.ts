@@ -20,7 +20,12 @@ export default defineConfig(({ mode }) => ({
     rollupOptions: {
       output: {
         manualChunks: undefined,
+        format: 'es',
       },
+    },
+    target: 'esnext',
+    modulePreload: {
+      polyfill: false,
     },
   },
   esbuild: {
