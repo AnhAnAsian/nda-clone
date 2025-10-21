@@ -21,14 +21,20 @@ export default defineConfig(({ mode }) => ({
       output: {
         manualChunks: undefined,
         format: 'es',
+        entryFileNames: 'assets/[name]-[hash].js',
+        chunkFileNames: 'assets/[name]-[hash].js',
+        assetFileNames: 'assets/[name]-[hash].[ext]',
       },
     },
-    target: 'esnext',
+    target: 'es2015',
     modulePreload: {
       polyfill: false,
     },
   },
   esbuild: {
     drop: mode === 'production' ? ['console', 'debugger'] : [],
+  },
+  define: {
+    'process.env.NODE_ENV': JSON.stringify(mode),
   },
 }));
