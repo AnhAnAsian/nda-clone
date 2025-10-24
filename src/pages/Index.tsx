@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Heart, Users, Mail, MapPin } from "lucide-react";
 import { useState } from "react";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger } from "@/components/ui/dialog";
 import heroImage from "@/assets/hero-bg.jpg";
 import textilesImage from "@/assets/textiles.jpg";
 import giftsImage from "@/assets/gifts.jpg";
@@ -105,6 +105,9 @@ const Index = () => {
               <DialogContent className="max-w-4xl w-full">
                 <DialogHeader>
                   <DialogTitle>Besuche uns in Gransee</DialogTitle>
+                  <DialogDescription>
+                    Entdecken Sie unseren Standort in Gransee und finden Sie uns auf der Karte.
+                  </DialogDescription>
                 </DialogHeader>
                 <div className="aspect-video w-full">
                   <iframe 

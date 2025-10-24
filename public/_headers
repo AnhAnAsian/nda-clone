@@ -1,5 +1,9 @@
 # Headers for GitHub Pages
 # Fix MIME type issues for JavaScript modules
+# Content Security Policy to allow Google Fonts
+
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self'; frame-src 'self' https://www.google.com https://maps.google.com https://*.googleapis.com; child-src 'self' https://www.google.com https://maps.google.com https://*.googleapis.com; object-src 'none'; base-uri 'self';
 
 /assets/*.js
   Content-Type: application/javascript; charset=utf-8
