@@ -6,6 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Heart, Users, Mail, MapPin } from "lucide-react";
 import { useState } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger } from "@/components/ui/dialog";
+import GoogleMaps from "@/components/GoogleMaps";
 import heroImage from "@/assets/hero-bg.jpg";
 import textilesImage from "@/assets/textiles.jpg";
 import giftsImage from "@/assets/gifts.jpg";
@@ -110,15 +111,7 @@ const Index = () => {
                   </DialogDescription>
                 </DialogHeader>
                 <div className="aspect-video w-full">
-                  <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d300.09419646248574!2d13.1570846!3d53.0068152!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a90d53305568c1%3A0x468ff83af563f7ab!2sNda-kaufhaus!5e0!3m2!1sen!2sde!4v1760735113586!5m2!1sen!2sde" 
-                    className="w-full h-full rounded-lg"
-                    style={{ border: 0 }} 
-                    allowFullScreen 
-                    loading="lazy" 
-                    referrerPolicy="no-referrer-when-downgrade"
-                    title="NDA Standort auf Google Maps"
-                  />
+                  <GoogleMaps className="w-full h-full" />
                 </div>
               </DialogContent>
             </Dialog>

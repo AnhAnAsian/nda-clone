@@ -3,7 +3,7 @@
 # Content Security Policy to allow Google Fonts
 
 /*
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self'; frame-src 'self' https://www.google.com https://maps.google.com https://*.googleapis.com; child-src 'self' https://www.google.com https://maps.google.com https://*.googleapis.com; object-src 'none'; base-uri 'self';
+  Content-Security-Policy: default-src 'self'; frame-src 'self' https://www.google.com https://maps.google.com https://*.googleapis.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://maps.googleapis.com https://maps.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https: blob:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://maps.googleapis.com;
 
 /assets/*.js
   Content-Type: application/javascript; charset=utf-8
