@@ -8,7 +8,12 @@ const GoogleMaps: React.FC<GoogleMapsProps> = ({ className = "" }) => {
   const mapRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Load Google Maps API
+    // For now, just show the fallback since we don't have a valid API key
+    // In production, you would need to get a Google Maps API key
+    showFallback();
+    
+    // Uncomment below when you have a valid Google Maps API key:
+    /*
     const loadGoogleMaps = () => {
       if (window.google && window.google.maps) {
         initializeMap();
@@ -16,47 +21,55 @@ const GoogleMaps: React.FC<GoogleMapsProps> = ({ className = "" }) => {
       }
 
       const script = document.createElement('script');
-      script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dgsWcQYVfJgJgY&libraries=places';
+      script.src = 'https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY_HERE&libraries=places';
       script.async = true;
       script.defer = true;
       script.onload = initializeMap;
       script.onerror = () => {
         console.error('Failed to load Google Maps API');
-        // Fallback: show a simple text message
-        if (mapRef.current) {
-          mapRef.current.innerHTML = `
-            <div style="display: flex; align-items: center; justify-content: center; height: 100%; background: #f5f5f5; border-radius: 8px; padding: 20px; text-align: center;">
-              <div>
-                <h3 style="margin: 0 0 10px 0; color: #333;">NDA Kaufhaus</h3>
-                <p style="margin: 0; color: #666;">Gransee, Deutschland</p>
-                <p style="margin: 10px 0 0 0; color: #888; font-size: 14px;">
-                  <a href="https://maps.google.com/?q=NDA+Kaufhaus+Gransee" target="_blank" rel="noopener noreferrer" style="color: #007bff; text-decoration: none;">
-                    Auf Google Maps öffnen →
-                  </a>
-                </p>
-              </div>
-            </div>
-          `;
-        }
+        showFallback();
       };
       document.head.appendChild(script);
     };
+    */
+
+    const showFallback = () => {
+      if (mapRef.current) {
+        mapRef.current.innerHTML = `
+          <div style="display: flex; align-items: center; justify-content: center; height: 100%; background: #f5f5f5; border-radius: 8px; padding: 20px; text-align: center;">
+            <div>
+              <h3 style="margin: 0 0 10px 0; color: #333;">NDA Kaufhaus</h3>
+              <p style="margin: 0; color: #666;">Gransee, Deutschland</p>
+              <p style="margin: 10px 0 0 0; color: #888; font-size: 14px;">
+                <a href="https://maps.google.com/?q=NDA+Kaufhaus+Gransee" target="_blank" rel="noopener noreferrer" style="color: #007bff; text-decoration: none;">
+                  Auf Google Maps öffnen →
+                </a>
+              </p>
+            </div>
+          </div>
+        `;
+      }
+    };
 
     const initializeMap = () => {
-      if (!mapRef.current || !window.google) return;
+      if (!mapRef.current || !window.google) {
+        showFallback();
+        return;
+      }
 
-      const map = new window.google.maps.Map(mapRef.current, {
-        center: { lat: 53.0068152, lng: 13.1570846 },
-        zoom: 15,
-        mapTypeId: window.google.maps.MapTypeId.ROADMAP,
-        styles: [
-          {
-            featureType: 'poi',
-            elementType: 'labels',
-            stylers: [{ visibility: 'off' }]
-          }
-        ]
-      });
+      try {
+        const map = new window.google.maps.Map(mapRef.current, {
+          center: { lat: 53.0068152, lng: 13.1570846 },
+          zoom: 15,
+          mapTypeId: window.google.maps.MapTypeId.ROADMAP,
+          styles: [
+            {
+              featureType: 'poi',
+              elementType: 'labels',
+              stylers: [{ visibility: 'off' }]
+            }
+          ]
+        });
 
       // Add marker
       new window.google.maps.Marker({
@@ -91,9 +104,13 @@ const GoogleMaps: React.FC<GoogleMapsProps> = ({ className = "" }) => {
       marker.addListener('click', () => {
         infoWindow.open(map, marker);
       });
+      } catch (error) {
+        console.error('Error initializing Google Maps:', error);
+        showFallback();
+      }
     };
 
-    loadGoogleMaps();
+    // loadGoogleMaps(); // Uncomment when you have API key
 
     // Cleanup
     return () => {
