@@ -5,8 +5,6 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Heart, Users, Mail, MapPin } from "lucide-react";
 import { useState } from "react";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger } from "@/components/ui/dialog";
-import GoogleMaps from "@/components/GoogleMaps";
 import heroImage from "@/assets/hero-bg.jpg";
 import textilesImage from "@/assets/textiles.jpg";
 import giftsImage from "@/assets/gifts.jpg";
@@ -97,24 +95,12 @@ const Index = () => {
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-5 justify-center animate-fade-in-delay">
-            <Dialog>
-              <DialogTrigger asChild>
-                <Button size="lg" className="bg-gradient-accent hover:opacity-90 shadow-accent text-white text-lg px-10 py-7 rounded-xl font-medium transition-all duration-300 hover:scale-105 hover:shadow-elegant border-0">
-                  Entdecke unsere Auswahl vor Ort!
-                </Button>
-              </DialogTrigger>
-              <DialogContent className="max-w-4xl w-full">
-                <DialogHeader>
-                  <DialogTitle>Besuche uns in Gransee</DialogTitle>
-                  <DialogDescription>
-                    Entdecken Sie unseren Standort in Gransee und finden Sie uns auf der Karte.
-                  </DialogDescription>
-                </DialogHeader>
-                <div className="aspect-video w-full">
-                  <GoogleMaps className="w-full h-full" />
-                </div>
-              </DialogContent>
-            </Dialog>
+            <Button size="lg" className="bg-gradient-accent hover:opacity-90 shadow-accent text-white text-lg px-10 py-7 rounded-xl font-medium transition-all duration-300 hover:scale-105 hover:shadow-elegant border-0">
+              <a href="https://maps.google.com/?q=NDA+Kaufhaus+Gransee" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                <MapPin className="w-5 h-5" />
+                Besuche uns in Gransee
+              </a>
+            </Button>
           </div>
         </div>
       </section>
